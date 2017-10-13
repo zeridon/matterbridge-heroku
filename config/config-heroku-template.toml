@@ -1,37 +1,54 @@
-[IRC]
+[slack.edgi]
+#Token to connect with the Slack API
+#You'll have to use a test/api-token using a dedicated user and not a bot token.
+#See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
+Token="${SLACK_EDGI_TOKEN}"
+RemoteNickFormat="[{PROTOCOL}] <{NICK}> "
 
-Enable=true
-Server="${IRC_SERVER}"
-Nick="${IRC_NICK}"
-UseTLS=${IRC_USE_TLS}
-UseSASL=${IRC_USE_SASL}
-SkipTLSVerify=${IRC_SKIP_TLS_VERIFY}
-NickServNick="${IRC_NICKSERV_NICK}"
-NickServPassword="${IRC_NICKSERV_PASSWORD}"
-RemoteNickFormat="${IRC_REMOTE_NICK_FORMAT}"
-IgnoreNicks="${IRC_IGNORE_NICKS}"
+[slack.archivers]
+#Token to connect with the Slack API
+#You'll have to use a test/api-token using a dedicated user and not a bot token.
+#See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
+Token="${SLACK_ARCHIVERS_TOKEN}"
+RemoteNickFormat="[{PROTOCOL}] <{NICK}> "
 
-[mattermost]
+[[gateway]]
+name="testing"
+enable=true
+  [[gateway.inout]]
+  account="slack.edgi"
+  channel="testing"
+  [[gateway.inout]]
+  account="slack.archivers"
+  channel="testing"
 
-Enable=true
-Server="${MATTERMOST_SERVER}"
-Team="${MATTERMOST_TEAM}"
-Login="${MATTERMOST_BOT_LOGIN}"
-Password="$MATTERMOST_BOT_PASSWORD}"
-NoTLS=${MATTERMOST_NO_TLS}
-SkipTLSVerify=${MATTERMOST_SKIP_TLS_VERIFY}
-ShowJoinPart=${MATTERMOST_SHOW_JOIN_PART}
-PrefixMessagesWithNick=${MATTERMOST_PREFIX_MSG_WITH_NICK}
-RemoteNickFormat="${MATTERMOST_REMOTE_NICK_FORMAT}"
-NickFormatter="${MATTERMOST_NICK_FORMATTER}"
-NicksPerRow=${MATTERMOST_NICKS_PER_ROW}
-IgnoreNicks="${MATTERMOST_IGNORE_NICKS}"
+#[[gateway]]
+#name="datatogether"
+#enable=true
+#  [[gateway.inout]]
+#  account="slack.edgi"
+#  channel="datatogether"
+#  [[gateway.inout]]
+#  account="slack.archivers"
+#  channel="datatogether"
+#
+#[[gateway]]
+#name="community-building"
+#enable=true
+#  [[gateway.inout]]
+#  account="slack.edgi"
+#  channel="community_building"
+#  [[gateway.inout]]
+#  account="slack.archivers"
+#  channel="community-building"
+#
+#[[gateway]]
+#name="webmonitoring"
+#enable=true
+#  [[gateway.inout]]
+#  account="slack.edgi"
+#  channel="webmonitoring"
+#  [[gateway.inout]]
+#  account="slack.archivers"
+#  channel="webmonitoring"
 
-[Channel "channel-1"]
-
-IRC="${IRC_CHANNEL}"
-mattermost="${MATTERMOST_CHANNEL}"
-
-[general]
-
-Plus=true
