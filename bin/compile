@@ -7,7 +7,7 @@ CACHE_DIR=$2
 ENV_DIR=$3
 
 MATTERBRIDGE_VERSION="$(cat $ENV_DIR/MATTERBRIDGE_VERSION)"
-MATTERBRIDGE_URL="https://github.com/42wim/matterbridge/releases/download/$MATTERBRIDGE_VERSION/matterbridge-linux64"
+MATTERBRIDGE_URL="https://github.com/42wim/matterbridge/releases/download/$MATTERBRIDGE_VERSION/matterbridge-linux-amd64"
 
 echo "-----> Downloading Matterbridge"
 cd $BUILD_DIR
