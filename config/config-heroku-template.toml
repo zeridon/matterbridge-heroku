@@ -23,33 +23,32 @@ enable=true
   account="slack.archivers"
   channel="testing"
 
-#[[gateway]]
-#name="datatogether"
-#enable=true
-#  [[gateway.inout]]
-#  account="slack.edgi"
-#  channel="datatogether"
-#  [[gateway.inout]]
-#  account="slack.archivers"
-#  channel="datatogether"
-#
-#[[gateway]]
-#name="community-building"
-#enable=true
-#  [[gateway.inout]]
-#  account="slack.edgi"
-#  channel="community_building"
-#  [[gateway.inout]]
-#  account="slack.archivers"
-#  channel="community-building"
-#
-#[[gateway]]
-#name="webmonitoring"
-#enable=true
-#  [[gateway.inout]]
-#  account="slack.edgi"
-#  channel="webmonitoring"
-#  [[gateway.inout]]
-#  account="slack.archivers"
-#  channel="webmonitoring"
+[[gateway]]
+name="datatogether"
+enable=true
+  [[gateway.inout]]
+  account="slack.edgi"
+  channel="datatogether"
+  [[gateway.inout]]
+  account="slack.archivers"
+  channel="datatogether"
 
+[[gateway]]
+name="community-building"
+enable=true
+  [[gateway.inout]]
+  account="slack.edgi"
+  channel="community_building"
+  [[gateway.inout]]
+  account="slack.archivers"
+  channel="community-building"
+
+[[gateway]]
+name="webmonitoring"
+enable=true
+  [[gateway.inout]]
+  account="slack.edgi"
+  channel="webmonitoring"
+  [[gateway.inout]]
+  account="slack.archivers"
+  channel="webmonitoring"
