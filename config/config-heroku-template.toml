@@ -14,16 +14,6 @@ Token="${SLACK_EDGI_TOKEN}"
 Token="${SLACK_ARCHIVERS_TOKEN}"
 
 [[gateway]]
-name="testing"
-enable=true
-  [[gateway.inout]]
-  account="slack.edgi"
-  channel="testing"
-  [[gateway.inout]]
-  account="slack.archivers"
-  channel="testing"
-
-[[gateway]]
 name="datatogether"
 enable=true
   [[gateway.inout]]
