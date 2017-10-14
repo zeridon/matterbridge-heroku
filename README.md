@@ -11,7 +11,7 @@ applications.
 A [**buildpack**](https://docs.cloudfoundry.org/buildpacks/) provides
 framework and runtime support for apps running on platforms like Heroku.
 
-An [**_inline_ buildpack**](https://github.com/kr/heroku-buildpack-inline#readme) is a special buildpack that includes code for both an app and a
+An [**_inline_ buildpack**](https://github.com/kr/heroku-buildpack-inline#readme) is a special buildpack that includes code for both the app and the
 buildpack that _runs_ the app.
 
 [**Matterbridge**](https://github.com/42wim/matterbridge#readme) is a
