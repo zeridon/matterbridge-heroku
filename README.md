@@ -1,7 +1,5 @@
 # Matterbridge-heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
 This is a fork of [the original
 `matterbridge-heroku`](https://github.com/cadecairos/matterbridge-heroku).
 
