@@ -8,16 +8,21 @@ This is a work in progress. I'd like it to eventually support an arbitrary numbe
 
 ## About this Fork
 
-Heroku is...
+[**Heroku**](https://www.heroku.com/what) is a platform for easily deploying
+applications.
 
-An buildpack is...
+A [**buildpack**](https://docs.cloudfoundry.org/buildpacks/) provides
+framework and runtime support for apps running on platforms like Heroku.
 
-An inline buildpack is...
+An [**_inline_ buildpack**](https://github.com/kr/heroku-buildpack-inline#readme) is a special buildpack that includes code for both an app and a
+buildpack that _runs_ the app.
 
-Matterbridge is...
+[**Matterbridge**](https://github.com/42wim/matterbridge#readme) is a
+simple _bridge_ that can relay messages between a number of different
+chat services, essentially connecting separate chat tools.
 
-This fork is intended to help EDGI bridge its Slack channels with
-Archivers Slack.
+This fork is intended to help bridge channels between both the EDGI and
+Archivers Slack teams.
 
 * Required envvars:
   * `MATTERBRIDGE_VERSION`. Use a [matterbridge git tag][git-tags].
