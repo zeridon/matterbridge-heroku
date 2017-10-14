@@ -21,8 +21,10 @@ buildpack that _runs_ the app.
 simple _bridge_ that can relay messages between a number of different
 chat services, essentially connecting separate chat tools.
 
-This fork is intended to help bridge channels between both the EDGI and
-Archivers Slack teams.
+This fork of [the original
+`matterbridge-heroku`](https://github.com/cadecairos/matterbridge-heroku)
+is intended to help bridge channels between both the EDGI and Archivers
+Slack teams.
 
 * Required envvars:
   * `MATTERBRIDGE_VERSION`. Use a [matterbridge git tag][git-tags].
