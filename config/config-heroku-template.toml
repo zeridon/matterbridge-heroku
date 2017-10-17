@@ -50,6 +50,16 @@ enable=true
   channel="webmonitoring"
 
 [[gateway]]
+name="oc-edgi"
+enable=true
+  [[gateway.inout]]
+  account="slack.edgi"
+  channel="opencollective"
+  [[gateway.inout]]
+  account="slack.opencollective"
+  channel="oc-edgi"
+
+[[gateway]]
 name="oc-civictechto"
 enable=true
   [[gateway.inout]]
