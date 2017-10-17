@@ -5,13 +5,19 @@ RemoteNickFormat="{NICK}@{BRIDGE}"
 #Token to connect with the Slack API
 #You'll have to use a test/api-token using a dedicated user and not a bot token.
 #See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
-Token="${SLACK_EDGI_TOKEN}"
+Token="${SLACK_EDGI_TOKEN}" # real user
 
 [slack.archivers]
 #Token to connect with the Slack API
 #You'll have to use a test/api-token using a dedicated user and not a bot token.
 #See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
-Token="${SLACK_ARCHIVERS_TOKEN}"
+Token="${SLACK_ARCHIVERS_TOKEN}" # real user
+
+[slack.civictechto]
+Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
+
+[slack.opencollective]
+Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 
 [[gateway]]
 name="datatogether"
@@ -42,3 +48,23 @@ enable=true
   [[gateway.inout]]
   account="slack.archivers"
   channel="webmonitoring"
+
+[[gateway]]
+name="oc-edgi"
+enable=true
+  [[gateway.inout]]
+  account="slack.edgi"
+  channel="opencollective"
+  [[gateway.inout]]
+  account="slack.opencollective"
+  channel="oc-edgi"
+
+[[gateway]]
+name="oc-civictechto"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="grants-and-funding"
+  [[gateway.inout]]
+  account="slack.opencollective"
+  channel="oc-civictechto"
