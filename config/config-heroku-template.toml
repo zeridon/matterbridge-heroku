@@ -24,6 +24,10 @@ RemoteNickFormat="{NICK}@{BRIDGE} "
 Token="${SLACK_HACKLABTO_TOKEN}" # bot user
 RemoteNickFormat="{NICK}@{PROTOCOL} "
 
+[slack.diybioto]
+Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
+RemoteNickFormat="{NICK}@{PROTOCOL} "
+
 [telegram.hacklabto]
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
@@ -112,13 +116,16 @@ enable=false
 
 [[gateway]]
 name="hacklabto-diybioto"
-enable=false
-  [[gateway.inout]]
-  account="telegram.hacklabto"
-  channel=""
+enable=true
+  #[[gateway.inout]]
+  #account="telegram.hacklabto"
+  #channel=""
   [[gateway.inout]]
   account="slack.hacklabto"
   channel="biolab"
+  [[gateway.inout]]
+  account="slack.diybioto"
+  channel="general"
 
 [[gateway]]
 name="hacklabto-darkroom"
