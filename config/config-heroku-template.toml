@@ -21,6 +21,7 @@ Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 
 [slack.hacklabto]
 Token="${SLACK_HACKLABTO_TOKEN}" # bot user
+RemoteNickFormat="{NICK}@{PROTOCOL}"
 
 [telegram.hacklabto]
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
