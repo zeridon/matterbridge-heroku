@@ -19,6 +19,12 @@ Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
 [slack.opencollective]
 Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 
+[slack.hacklabto]
+Token="${SLACK_HACKLABTO_TOKEN}" # bot user
+
+[telegram.hacklabto]
+Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
+
 [[gateway]]
 name="datatogether"
 enable=true
@@ -68,3 +74,75 @@ enable=true
   [[gateway.inout]]
   account="slack.opencollective"
   channel="oc-civictechto"
+
+## HACKLAB
+
+[[gateway]]
+name="hacklabto-general"
+enable=true
+  [[gateway.inout]]
+  account="telegram.hacklabto"
+  channel="-1001087615555"
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="general"
+
+[[gateway]]
+name="hacklabto-3d-printers"
+enable=false
+  [[gateway.inout]]
+  account="telegram.hacklabto"
+  channel=""
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="3d-printers"
+
+[[gateway]]
+name="hacklabto-amateur-radio"
+enable=false
+  [[gateway.inout]]
+  account="telegram.hacklabto"
+  channel=""
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="amateur_radio"
+
+[[gateway]]
+name="hacklabto-diybioto"
+enable=false
+  [[gateway.inout]]
+  account="telegram.hacklabto"
+  channel=""
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="biolab"
+
+[[gateway]]
+name="hacklabto-darkroom"
+enable=false
+  [[gateway.inout]]
+  account="telegram.hacklabto"
+  channel=""
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="darkroom"
+
+[[gateway]]
+name="hacklabto-board"
+enable=false
+  [[gateway.inout]]
+  account="telegram.hacklabto"
+  channel=""
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="hacklab-board"
+
+[[gateway]]
+name="hacklabto-operations"
+enable=false
+  [[gateway.inout]]
+  account="telegram.hacklabto"
+  channel=""
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="operations"
