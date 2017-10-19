@@ -35,9 +35,11 @@ RemoteNickFormat="{NICK}@{PROTOCOL}: "
 [irc.freenode]
 Server="chat.freenode.net:6697"
 Nick="${IRC_USERNAME}"
-Password="${IRC_PASSWORD}"
 RemoteNickFormat="{NICK}@{PROTOCOL} "
 UseTLS=true
+UseSASL=true
+NickServNick="${IRC_USERNAME}"
+NickServPassword="${IRC_PASSWORD}"
 
 [[gateway]]
 name="datatogether"
