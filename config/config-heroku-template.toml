@@ -156,3 +156,13 @@ enable=false
   [[gateway.inout]]
   account="slack.hacklabto"
   channel="operations"
+
+[[gateway]]
+name="opencollective-hacklabto"
+enable=true
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="opencollective"
+  [[gateway.inout]]
+  account="slack.opencollective"
+  channel="oc-hacklabto"
