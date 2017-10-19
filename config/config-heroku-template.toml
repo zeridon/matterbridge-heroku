@@ -38,7 +38,6 @@ Nick="${IRC_USERNAME}"
 Password="${IRC_PASSWORD}"
 RemoteNickFormat="{NICK}@{PROTOCOL} "
 UseTLS=true
-UseSASL=true
 
 [[gateway]]
 name="datatogether"
