@@ -126,9 +126,9 @@ enable=false
 [[gateway]]
 name="hacklabto-diybioto"
 enable=true
-  #[[gateway.inout]]
-  #account="telegram.hacklabto"
-  #channel=""
+  [[gateway.inout]]
+  account="telegram.hacklabto"
+  channel="-1001089003630"
   [[gateway.inout]]
   account="slack.hacklabto"
   channel="biolab"
