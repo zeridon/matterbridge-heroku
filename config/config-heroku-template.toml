@@ -22,7 +22,7 @@ RemoteNickFormat="{NICK}@{BRIDGE} "
 
 [slack.hacklabto]
 Token="${SLACK_HACKLABTO_TOKEN}" # bot user
-RemoteNickFormat="{NICK}@{PROTOCOL} "
+RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
 
 [slack.diybioto]
 Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
