@@ -40,6 +40,7 @@ UseTLS=true
 UseSASL=true
 NickServNick="${IRC_USERNAME}"
 NickServPassword="${IRC_PASSWORD}"
+IgnoreNicks="doorbot"
 
 [[gateway]]
 name="datatogether"
