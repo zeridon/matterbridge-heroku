@@ -105,10 +105,10 @@ enable=true
 
 [[gateway]]
 name="hacklabto-3d-printers"
-enable=false
+enable=true
   [[gateway.inout]]
   account="telegram.hacklabto"
-  channel=""
+  channel="-1001081652474"
   [[gateway.inout]]
   account="slack.hacklabto"
   channel="3d-printers"
@@ -145,6 +145,16 @@ enable=false
   [[gateway.inout]]
   account="slack.hacklabto"
   channel="darkroom"
+
+[[gateway]]
+name="hacklabto-shop"
+enable=true
+  [[gateway.inout]]
+  account="telegram.hacklabto"
+  channel="-1001093582611"
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="shop"
 
 [[gateway]]
 name="hacklabto-board"
