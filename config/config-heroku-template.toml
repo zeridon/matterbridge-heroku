@@ -33,7 +33,7 @@ Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 
 [irc.freenode]
-Server="irc.freenode.net:6667"
+Server="chat.freenode.net:6697"
 Nick="hacklabto-bridgebot"
 RemoteNickFormat="{NICK}@{PROTOCOL} "
 
