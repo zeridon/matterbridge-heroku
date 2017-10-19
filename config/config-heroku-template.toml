@@ -169,10 +169,10 @@ enable=false
 
 [[gateway]]
 name="hacklabto-operations"
-enable=false
+enable=true
   [[gateway.inout]]
   account="telegram.hacklabto"
-  channel=""
+  channel="-1001135498637"
   [[gateway.inout]]
   account="slack.hacklabto"
   channel="operations"
