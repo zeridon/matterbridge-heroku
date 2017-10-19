@@ -34,10 +34,10 @@ RemoteNickFormat="{NICK}@{PROTOCOL}: "
 
 [irc.freenode]
 Server="chat.freenode.net:6697"
-Nick="hacklabto-bridgebot"
+Nick="hacklabto-bridge"
 RemoteNickFormat="{NICK}@{PROTOCOL} "
 UseTLS=true
-UseSASL=true
+#UseSASL=true
 
 [[gateway]]
 name="datatogether"
@@ -176,7 +176,7 @@ enable=true
 
 [[gateway]]
 name="irc"
-enable=false
+enable=true
   [[gateway.inout]]
   account="slack.hacklabto"
   channel="freenode-irc"
