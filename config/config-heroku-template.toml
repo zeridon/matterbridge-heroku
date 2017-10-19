@@ -194,4 +194,4 @@ enable=true
   channel="freenode-irc"
   [[gateway.inout]]
   account="irc.freenode"
-  channel="hacklabto"
+  channel="#hacklabto"
