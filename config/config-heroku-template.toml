@@ -32,6 +32,11 @@ RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 
+[irc.freenode]
+Server="irc.freenode.net:6667"
+Nick="hacklabto-bridgebot"
+RemoteNickFormat="{NICK}@{PROTOCOL} "
+
 [[gateway]]
 name="datatogether"
 enable=true
@@ -166,3 +171,13 @@ enable=true
   [[gateway.inout]]
   account="slack.opencollective"
   channel="oc-hacklabto"
+
+[[gateway]]
+name="irc"
+enable=true
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="freenode-irc"
+  [[gateway.inout]]
+  account="irc.freenode"
+  channel="hacklabto"
