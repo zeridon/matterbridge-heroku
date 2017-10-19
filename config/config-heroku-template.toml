@@ -176,7 +176,7 @@ enable=true
 
 [[gateway]]
 name="irc"
-enable=true
+enable=false
   [[gateway.inout]]
   account="slack.hacklabto"
   channel="freenode-irc"
