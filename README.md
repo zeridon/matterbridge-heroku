@@ -32,7 +32,7 @@ Archivers Slack teams.
     * With caution, you may want to use the [latest nightly matterbridge
       build](https://bintray.com/42wim/nightly/Matterbridge/_latestVersion)
       while waiting on the next official release.
-  * `DEBUG`. Log all message events.
+  * `DEBUG`. Set to "1" to log all message events across bridges.
 * Auto-deploys `edgi` branch to our heroku app: `edgi-matterbridge`
 * `edgi` branch is protected branch, and changes must go through pull
   request process.
