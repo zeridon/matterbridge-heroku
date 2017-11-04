@@ -25,6 +25,10 @@ Archivers Slack teams.
   * `MATTERBRIDGE_VERSION`. Use a [matterbridge git tag][git-tags].
   * `SLACK_ARCHIVERS_TOKEN`. See [_Slack bot setup_ documentation][bot-setup].
   * `SLACK_EDGI_TOKEN`. See [_Slack bot setup_ documentation][bot-setup].
+* Optional envvars:
+  * `MATTERBRIDGE_URL`. Use this to download the binary from a custom
+    url instead of the tagged release from the official GitHub repo.
+    (Setting this makes `MATTERBRIDGE_VERSION` ignored.)
 * Auto-deploys `edgi` branch to our heroku app: `edgi-matterbridge`
 * `edgi` branch is protected branch, and changes must go through pull
   request process.
