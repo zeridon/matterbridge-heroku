@@ -32,6 +32,10 @@ RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 
+[gitter.hacklabto]
+Token="${GITTER_HACKLABTO_TOKEN}" # bot user: patconnolly Twitter (should be hacklabto Twitter)
+RemoteNickFormat="{NICK}@{PROTOCOL}: "
+
 [irc.freenode]
 Server="chat.freenode.net:6697"
 Nick="${IRC_USERNAME}"
@@ -196,3 +200,13 @@ enable=true
   [[gateway.inout]]
   account="irc.freenode"
   channel="#hacklabto"
+
+[[gateway]]
+name="lobby"
+enable=true
+  [[gateway.inout]]
+  account="slack.hacklabto"
+  channel="public-lobby"
+  [[gateway.inout]]
+  account="gitter.hacklabto"
+  channel="hacklabto/lobby"
