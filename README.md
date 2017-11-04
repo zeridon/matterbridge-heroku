@@ -29,6 +29,9 @@ Archivers Slack teams.
   * `MATTERBRIDGE_URL`. Use this to download the binary from a custom
     url instead of the tagged release from the official GitHub repo.
     (Setting this makes `MATTERBRIDGE_VERSION` ignored.)
+    * With caution, you may want to use the [latest nightly matterbridge
+      build](https://bintray.com/42wim/nightly/Matterbridge/_latestVersion)
+      while waiting on the next official release.
 * Auto-deploys `edgi` branch to our heroku app: `edgi-matterbridge`
 * `edgi` branch is protected branch, and changes must go through pull
   request process.
