@@ -1,24 +1,23 @@
+[general]
+RemoteNickFormat="{NICK}@{BRIDGE}: "
+
 [slack.edgi]
 #Token to connect with the Slack API
 #You'll have to use a test/api-token using a dedicated user and not a bot token.
 #See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
 Token="${SLACK_EDGI_TOKEN}" # real user
-RemoteNickFormat="{NICK}@{BRIDGE} "
 
 [slack.archivers]
 #Token to connect with the Slack API
 #You'll have to use a test/api-token using a dedicated user and not a bot token.
 #See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
 Token="${SLACK_ARCHIVERS_TOKEN}" # real user
-RemoteNickFormat="{NICK}@{BRIDGE} "
 
 [slack.civictechto]
 Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
-RemoteNickFormat="{NICK}@{BRIDGE} "
 
 [slack.opencollective]
 Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
-RemoteNickFormat="{NICK}@{BRIDGE} "
 
 [slack.hacklabto]
 Token="${SLACK_HACKLABTO_TOKEN}" # bot user
@@ -46,6 +45,19 @@ NickServNick="${IRC_USERNAME}"
 NickServPassword="${IRC_PASSWORD}"
 IgnoreNicks="doorbot"
 
+[slack.muckrock]
+Token="${SLACK_MUCKROCK_TOKEN}" # matterbridge-bot user
+
+[[gateway]]
+name="muckrock-canada"
+enable=false
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="muckrock-canada-pub"
+  [[gateway.inout]]
+  account="slack.muckrock"
+  channel="canada"
+
 [[gateway]]
 name="datatogether"
 enable=true
@@ -55,6 +67,9 @@ enable=true
   [[gateway.inout]]
   account="slack.archivers"
   channel="datatogether"
+  [[gateway.inout]]
+  account="gitter.hacklabto"
+  channel="datatogether/lobby"
 
 [[gateway]]
 name="community-building"
