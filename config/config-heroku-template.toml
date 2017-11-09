@@ -31,7 +31,7 @@ RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 
-[gitter.hacklabto]
+[gitter.gitter]
 Token="${GITTER_HACKLABTO_TOKEN}" # bot user: hacklabto twitter account
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 
@@ -68,7 +68,7 @@ enable=true
   account="slack.archivers"
   channel="datatogether"
   [[gateway.inout]]
-  account="gitter.hacklabto"
+  account="gitter.gitter"
   channel="datatogether/lobby"
 
 [[gateway]]
@@ -223,5 +223,5 @@ enable=true
   account="slack.hacklabto"
   channel="public-lobby"
   [[gateway.inout]]
-  account="gitter.hacklabto"
+  account="gitter.gitter"
   channel="hacklabto/lobby"
