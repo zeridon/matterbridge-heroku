@@ -30,6 +30,7 @@ RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
 [telegram.hacklabto]
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
+UseInsecureURL=true
 
 [gitter.gitter]
 Token="${GITTER_HACKLABTO_TOKEN}" # bot user: hacklabto twitter account
