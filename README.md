@@ -3,6 +3,8 @@
 This is a fork of [the original
 `matterbridge-heroku`](https://github.com/cadecairos/matterbridge-heroku).
 
+It includes [a custom config file][config] specific to one implementation, but this can easily be modified in a new fork.
+
 ## About this Fork
 
 [**Heroku**](https://www.heroku.com/what) is a platform for easily deploying
@@ -36,7 +38,8 @@ Archivers Slack teams.
 * Auto-deploys `edgi` branch to our heroku app: `edgi-matterbridge`
 * `edgi` branch is protected branch, and changes must go through pull
   request process.
-* Edit channel bridge config via [`config/config-heroku-template.toml`](config/config-heroku-template.toml).
+* Edit channel bridge config via [`config/config-heroku-template.toml`][config].
 
    [bot-setup]: https://github.com/42wim/matterbridge/wiki/Slack-bot-setup
    [git-tags]: https://github.com/42wim/matterbridge/tags
+   [config]: config/config-heroku-template.toml
