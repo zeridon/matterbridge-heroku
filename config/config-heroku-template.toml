@@ -251,3 +251,13 @@ enable=true
   [[gateway.inout]]
   account="slack.betanyc"
   channel="vnetwork"
+
+[[gateway]]
+name="holopolis"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="holopolis"
+  [[gateway.inout]]
+  account="slack.g0vtw"
+  channel="holopolis"
