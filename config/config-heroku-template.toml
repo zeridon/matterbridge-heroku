@@ -238,7 +238,7 @@ enable=true
 
 [[gateway]]
 name="vnetwork"
-enable=false
+enable=true
   [[gateway.inout]]
   account="slack.civictechto"
   channel="vnetwork"
