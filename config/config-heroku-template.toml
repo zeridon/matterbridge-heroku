@@ -1,31 +1,43 @@
 [general]
 RemoteNickFormat="{NICK}@{BRIDGE}: "
 
-[slack.edgi]
-#Token to connect with the Slack API
-#You'll have to use a test/api-token using a dedicated user and not a bot token.
-#See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
-Token="${SLACK_EDGI_TOKEN}" # real user
+#[slack.example]
+##Token to connect with the Slack API
+##You'll have to use a test/api-token using a dedicated user and not a bot token.
+##See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
+#Token="${SLACK_EXAMPLE_TOKEN}" # real user
 
 [slack.archivers]
-#Token to connect with the Slack API
-#You'll have to use a test/api-token using a dedicated user and not a bot token.
-#See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
 Token="${SLACK_ARCHIVERS_TOKEN}" # real user
+
+[slack.betanyc]
+Token="${SLACK_BETANYC_TOKEN}" # real user: bridgebot-patcon
 
 [slack.civictechto]
 Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
 
-[slack.opencollective]
-Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
+[slack.diybioto]
+Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
+RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
+
+[slack.edgi]
+Token="${SLACK_EDGI_TOKEN}" # real user
+
+[slack.g0vtw]
+Token="${SLACK_G0VTW_TOKEN}" # real user: bridgebot-patcon
 
 [slack.hacklabto]
 Token="${SLACK_HACKLABTO_TOKEN}" # bot user
 RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
 
-[slack.diybioto]
-Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
-RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
+[slack.muckrock]
+Token="${SLACK_MUCKROCK_TOKEN}" # matterbridge-bot user
+
+[slack.opencollective]
+Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
+
+[slack.proghacknight]
+Token="${SLACK_PROGHACKNIGHT_TOKEN}" # real user: bridgebot-patcon
 
 [telegram.hacklabto]
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
@@ -45,9 +57,6 @@ UseSASL=true
 NickServNick="${IRC_USERNAME}"
 NickServPassword="${IRC_PASSWORD}"
 IgnoreNicks="doorbot"
-
-[slack.muckrock]
-Token="${SLACK_MUCKROCK_TOKEN}" # matterbridge-bot user
 
 [[gateway]]
 name="muckrock-canada"
@@ -226,3 +235,19 @@ enable=true
   [[gateway.inout]]
   account="gitter.gitter"
   channel="hacklabto/lobby"
+
+[[gateway]]
+name="vnetwork"
+enable=false
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="vnetwork"
+  [[gateway.inout]]
+  account="slack.g0vtw"
+  channel="vnetwork"
+  [[gateway.inout]]
+  account="slack.proghacknight"
+  channel="vnetwork"
+  [[gateway.inout]]
+  account="slack.betanyc"
+  channel="vnetwork"
