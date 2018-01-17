@@ -245,9 +245,9 @@ enable=true
   [[gateway.inout]]
   account="slack.g0vtw"
   channel="vnetwork"
-  [[gateway.inout]]
-  account="slack.proghacknight"
-  channel="vnetwork"
+  #[[gateway.inout]]
+  #account="slack.proghacknight"
+  #channel="vnetwork"
   [[gateway.inout]]
   account="slack.betanyc"
   channel="vnetwork"
