@@ -23,7 +23,7 @@ RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
 [slack.edgi]
 Token="${SLACK_EDGI_TOKEN}" # real user
 
-[slack.g0vtw]
+[slack.g0v-tw]
 Token="${SLACK_G0VTW_TOKEN}" # real user: bridgebot-patcon
 
 [slack.hacklabto]
@@ -36,7 +36,7 @@ Token="${SLACK_MUCKROCK_TOKEN}" # matterbridge-bot user
 [slack.opencollective]
 Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 
-[slack.proghacknight]
+[slack.progressivehacknight]
 Token="${SLACK_PROGHACKNIGHT_TOKEN}" # real user: bridgebot-patcon
 
 [telegram.hacklabto]
@@ -243,10 +243,10 @@ enable=true
   account="slack.civictechto"
   channel="vnetwork"
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack.g0v-tw"
   channel="vnetwork"
   #[[gateway.inout]]
-  #account="slack.proghacknight"
+  #account="slack.progressivehacknight"
   #channel="vnetwork"
   [[gateway.inout]]
   account="slack.betanyc"
@@ -259,5 +259,5 @@ enable=true
   account="slack.civictechto"
   channel="holopolis"
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack.g0v-tw"
   channel="holopolis"
