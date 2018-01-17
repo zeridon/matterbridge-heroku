@@ -1,31 +1,34 @@
 [general]
 RemoteNickFormat="{NICK}@{BRIDGE}: "
 
-[slack.edgi]
-#Token to connect with the Slack API
-#You'll have to use a test/api-token using a dedicated user and not a bot token.
-#See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
-Token="${SLACK_EDGI_TOKEN}" # real user
+#[slack.example]
+##Token to connect with the Slack API
+##You'll have to use a test/api-token using a dedicated user and not a bot token.
+##See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
+#Token="${SLACK_EXAMPLE_TOKEN}" # real user
 
 [slack.archivers]
-#Token to connect with the Slack API
-#You'll have to use a test/api-token using a dedicated user and not a bot token.
-#See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
 Token="${SLACK_ARCHIVERS_TOKEN}" # real user
 
 [slack.civictechto]
 Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
 
-[slack.opencollective]
-Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
+[slack.diybioto]
+Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
+RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
+
+[slack.edgi]
+Token="${SLACK_EDGI_TOKEN}" # real user
 
 [slack.hacklabto]
 Token="${SLACK_HACKLABTO_TOKEN}" # bot user
 RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
 
-[slack.diybioto]
-Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
-RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
+[slack.muckrock]
+Token="${SLACK_MUCKROCK_TOKEN}" # matterbridge-bot user
+
+[slack.opencollective]
+Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 
 [telegram.hacklabto]
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
@@ -45,9 +48,6 @@ UseSASL=true
 NickServNick="${IRC_USERNAME}"
 NickServPassword="${IRC_PASSWORD}"
 IgnoreNicks="doorbot"
-
-[slack.muckrock]
-Token="${SLACK_MUCKROCK_TOKEN}" # matterbridge-bot user
 
 [[gateway]]
 name="muckrock-canada"
