@@ -16,6 +16,9 @@ Token="${SLACK_BETANYC_TOKEN}" # real user: bridgebot-patcon
 [slack.civictechto]
 Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
 
+[slack.civictechto]
+Token="${SLACK_CIVICTECHWR_TOKEN}" # real user: bridgebot-patcon
+
 [slack.diybioto]
 Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
 RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
@@ -273,4 +276,7 @@ enable=true
   channel="organize-canada"
   [[gateway.inout]]
   account="slack.yowcivictech"
+  channel="organizing-canada"
+  [[gateway.inout]]
+  account="slack.civictechwr"
   channel="organizing-canada"
