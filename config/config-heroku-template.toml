@@ -270,7 +270,7 @@ name="organizing-canada"
 enable=true
   [[gateway.inout]]
   account="slack.civictechto"
-  channel="organizing-canada"
+  channel="organize-canada"
   [[gateway.inout]]
   account="slack.yowcivictech"
   channel="organizing-canada"
