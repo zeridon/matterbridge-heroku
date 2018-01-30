@@ -106,7 +106,7 @@ enable=true
 
 [[gateway]]
 name="oc-edgi"
-enable=true
+enable=false # archived on EDGI side
   [[gateway.inout]]
   account="slack.edgi"
   channel="opencollective"
