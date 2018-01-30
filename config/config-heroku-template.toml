@@ -39,6 +39,9 @@ Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 [slack.progressivehacknight]
 Token="${SLACK_PROGHACKNIGHT_TOKEN}" # real user: bridgebot-patcon
 
+[slack.yowcivictech]
+Token="${SLACK_YOWCIVICTECH_TOKEN}" # real user: bridgebot-patcon
+
 [telegram.hacklabto]
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
@@ -261,3 +264,13 @@ enable=true
   [[gateway.inout]]
   account="slack.g0v-tw"
   channel="holopolis"
+
+[[gateway]]
+name="organizing-canada"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="organizing-canada"
+  [[gateway.inout]]
+  account="slack.yowcivictech"
+  channel="organizing-canada"
