@@ -16,7 +16,7 @@ Token="${SLACK_BETANYC_TOKEN}" # real user: bridgebot-patcon
 [slack.civictechto]
 Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
 
-[slack.civictechto]
+[slack.civictechwr]
 Token="${SLACK_CIVICTECHWR_TOKEN}" # real user: bridgebot-patcon
 
 [slack.diybioto]
