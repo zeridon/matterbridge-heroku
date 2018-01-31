@@ -1,15 +1,13 @@
 [general]
 RemoteNickFormat="{NICK}@{BRIDGE}: "
+# Show messages announcing when people arrive/leave remote channels
+ShowJoinPart=true
 
 #[slack.example]
 ##Token to connect with the Slack API
 ##You'll have to use a test/api-token using a dedicated user and not a bot token.
 ##See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
 #Token="${SLACK_EXAMPLE_TOKEN}" # real user
-
-[slack]
-# Show messages announcing when people arrive/leave remote channels
-ShowJoinPart=true
 
 [slack.archivers]
 Token="${SLACK_ARCHIVERS_TOKEN}" # real user
