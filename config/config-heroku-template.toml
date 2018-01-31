@@ -17,9 +17,11 @@ Token="${SLACK_BETANYC_TOKEN}" # real user: bridgebot-patcon
 
 [slack.civictechto]
 Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
+ShowJoinPart=true
 
 [slack.civictechwr]
 Token="${SLACK_CIVICTECHWR_TOKEN}" # real user: bridgebot-patcon
+ShowJoinPart=true
 
 [slack.diybioto]
 Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
@@ -46,6 +48,7 @@ Token="${SLACK_PROGHACKNIGHT_TOKEN}" # real user: bridgebot-patcon
 
 [slack.yowcivictech]
 Token="${SLACK_YOWCIVICTECH_TOKEN}" # real user: bridgebot-patcon
+ShowJoinPart=true
 
 [telegram.hacklabto]
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
