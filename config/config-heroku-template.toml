@@ -1,7 +1,6 @@
 [general]
 RemoteNickFormat="{NICK}@{BRIDGE}: "
 # Show messages announcing when people arrive/leave remote channels
-ShowJoinPart=true
 
 #[slack.example]
 ##Token to connect with the Slack API
@@ -278,7 +277,7 @@ name="organizing-canada"
 enable=true
   [[gateway.inout]]
   account="slack.civictechto"
-  channel="organize-canada"
+  channel="organizing-canada"
   [[gateway.inout]]
   account="slack.yowcivictech"
   channel="organizing-canada"
