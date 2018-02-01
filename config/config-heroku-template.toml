@@ -14,6 +14,10 @@ Token="${SLACK_ARCHIVERS_TOKEN}" # real user
 [slack.betanyc]
 Token="${SLACK_BETANYC_TOKEN}" # real user: bridgebot-patcon
 
+[slack.civictechfredericton]
+Token="${SLACK_CIVICTECHFREDERICTON_TOKEN}" # real user: patcon
+ShowJoinPart=true
+
 [slack.civictechlondon]
 Token="${SLACK_CIVICTECHLONDON_TOKEN}" # real user: patcon
 ShowJoinPart=true
@@ -279,6 +283,9 @@ enable=true
 [[gateway]]
 name="organizing-canada"
 enable=true
+  [[gateway.inout]]
+  account="slack.civictechfredericton"
+  channel="organizing-canada"
   [[gateway.inout]]
   account="slack.civictechlondon"
   channel="organizing-canada"
