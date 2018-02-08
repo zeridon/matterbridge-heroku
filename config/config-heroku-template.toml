@@ -27,7 +27,7 @@ Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
 ShowJoinPart=true
 
 [slack.civictechwr]
-Token="${SLACK_CIVICTECHWR_TOKEN}" # real user: bridgebot-patcon
+Token="${SLACK_CIVICTECHWR_TOKEN}" # real user: patcon
 ShowJoinPart=true
 
 [slack.diybioto]
@@ -54,7 +54,7 @@ Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 Token="${SLACK_PROGHACKNIGHT_TOKEN}" # real user: bridgebot-patcon
 
 [slack.yowcivictech]
-Token="${SLACK_YOWCIVICTECH_TOKEN}" # real user: bridgebot-patcon
+Token="${SLACK_YOWCIVICTECH_TOKEN}" # real user: patcon
 ShowJoinPart=true
 
 [telegram.hacklabto]
