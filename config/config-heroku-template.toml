@@ -30,6 +30,10 @@ ShowJoinPart=true
 Token="${SLACK_CIVICTECHWR_TOKEN}" # real user: patcon
 ShowJoinPart=true
 
+[slack.codeforall]
+Token="${SLACK_CODEFORALL_TOKEN}" # real user: patcon
+ShowJoinPart=true
+
 [slack.diybioto]
 Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
 RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
@@ -52,6 +56,10 @@ Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 
 [slack.progressivehacknight]
 Token="${SLACK_PROGHACKNIGHT_TOKEN}" # real user: bridgebot-patcon
+
+[slack.sfbrigade]
+Token="${SLACK_SFBRIGADE_TOKEN}" # real user: patcon
+ShowJoinPart=true
 
 [slack.yowcivictech]
 Token="${SLACK_YOWCIVICTECH_TOKEN}" # real user: patcon
@@ -305,6 +313,9 @@ enable=true
   [[gateway.out]]
   account="slack.civictechto"
   channel="organizing-feed"
+  [[gateway.out]]
+  account="slack.codeforall"
+  channel="organizing-feed"
 
   [[gateway.in]]
   account="slack.civictechto"
@@ -318,3 +329,6 @@ enable=true
   [[gateway.in]]
   account="slack.yowcivictech"
   channel="organizers"
+  [[gateway.in]]
+  account="slack.sfbrigade"
+  channel="brigade"
