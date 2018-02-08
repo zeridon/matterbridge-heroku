@@ -298,3 +298,23 @@ enable=true
   [[gateway.inout]]
   account="slack.yowcivictech"
   channel="organizing-canada"
+
+[[gateway]]
+name="organizing-feed"
+enable=true
+  [[gateway.out]]
+  account="slack.civictechto"
+  channel="organizing-feed"
+
+  [[gateway.in]]
+  account="slack.civictechto"
+  channel="operations"
+  [[gateway.in]]
+  account="slack.civictechlondon"
+  channel="organizing"
+  [[gateway.in]]
+  account="slack.civictechwr"
+  channel="organizing"
+  [[gateway.in]]
+  account="slack.yowcivictech"
+  channel="organizers"
