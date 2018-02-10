@@ -332,7 +332,7 @@ enable=true
   channel="organizing"
   [[gateway.in]]
   account="slack.yowcivictech"
-  channel="organizers"
+  channel="organizing"
   [[gateway.in]]
   account="slack.sfbrigade"
   channel="brigade"
