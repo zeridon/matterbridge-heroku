@@ -320,9 +320,6 @@ enable=true
   [[gateway.out]]
   account="slack.civictechto"
   channel="organizing-feed"
-  [[gateway.out]]
-  account="slack.codeforall"
-  channel="organizing-feed"
 
   [[gateway.in]]
   account="slack.civictechto"
