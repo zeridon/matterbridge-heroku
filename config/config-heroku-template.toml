@@ -75,7 +75,7 @@ RemoteNickFormat="{NICK}@{PROTOCOL}: "
 UseInsecureURL=true
 
 [gitter.gitter]
-Token="${GITTER_HACKLABTO_TOKEN}" # bot user: hacklabto twitter account
+Token="${GITTER_BRIDGEBOT_TOKEN}" # bot user: gitterbridgebot twitter account
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 
 [irc.freenode]
