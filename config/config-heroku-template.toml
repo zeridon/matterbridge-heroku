@@ -107,9 +107,6 @@ enable=true
   [[gateway.inout]]
   account="slack.archivers"
   channel="datatogether"
-  [[gateway.inout]]
-  account="gitter.gitter"
-  channel="datatogether/lobby"
 
 [[gateway]]
 name="community-building"
