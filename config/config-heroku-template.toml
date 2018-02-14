@@ -8,8 +8,7 @@ RemoteNickFormat="{NICK} ({BRIDGE}): "
 ##See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
 #Token="${SLACK_EXAMPLE_TOKEN}" # real user
 
-[slack.archivers]
-Token="${SLACK_ARCHIVERS_TOKEN}" # real user
+# Civic Tech
 
 [slack.betanyc]
 Token="${SLACK_BETANYC_TOKEN}" # real user: bridgebot-patcon
@@ -38,25 +37,8 @@ ShowJoinPart=true
 Token="${SLACK_CODEFORALL_TOKEN}" # real user: patcon
 ShowJoinPart=true
 
-[slack.diybioto]
-Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
-RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
-
-[slack.edgi]
-Token="${SLACK_EDGI_TOKEN}" # real user
-
 [slack.g0v-tw]
 Token="${SLACK_G0VTW_TOKEN}" # real user: bridgebot-patcon
-
-[slack.hacklabto]
-Token="${SLACK_HACKLABTO_TOKEN}" # bot user
-RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
-
-[slack.muckrock]
-Token="${SLACK_MUCKROCK_TOKEN}" # matterbridge-bot user
-
-[slack.opencollective]
-Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 
 [slack.progressivehacknight]
 Token="${SLACK_PROGHACKNIGHT_TOKEN}" # real user: bridgebot-patcon
@@ -69,10 +51,36 @@ ShowJoinPart=true
 Token="${SLACK_YOWCIVICTECH_TOKEN}" # real user: patcon
 ShowJoinPart=true
 
+# EDGI
+
+[slack.archivers]
+Token="${SLACK_ARCHIVERS_TOKEN}" # real user
+
+[slack.edgi]
+Token="${SLACK_EDGI_TOKEN}" # real user
+
+# HackLab Toronto
+
+[slack.diybioto]
+Token="${SLACK_DIYBIOTO_TOKEN}" # TMP patcon user
+RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
+
+[slack.hacklabto]
+Token="${SLACK_HACKLABTO_TOKEN}" # bot user
+RemoteNickFormat="{NICK}@{BRIDGE}.{PROTOCOL} "
+
 [telegram.hacklabto]
 Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 UseInsecureURL=true
+
+# Other
+
+[slack.muckrock]
+Token="${SLACK_MUCKROCK_TOKEN}" # matterbridge-bot user
+
+[slack.opencollective]
+Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 
 [gitter.gitter]
 Token="${GITTER_BRIDGEBOT_TOKEN}" # bot user: gitterbridgebot twitter account
