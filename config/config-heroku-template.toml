@@ -40,6 +40,10 @@ ShowJoinPart=true
 [slack.g0v-tw]
 Token="${SLACK_G0VTW_TOKEN}" # real user: bridgebot-patcon
 
+[slack.openoakland]
+Token="${SLACK_OPENOAKLAND_TOKEN}" # real user: patcon
+ShowJoinPart=true
+
 [slack.progressivehacknight]
 Token="${SLACK_PROGHACKNIGHT_TOKEN}" # real user: bridgebot-patcon
 
@@ -341,3 +345,6 @@ enable=true
   [[gateway.in]]
   account="slack.sfbrigade"
   channel="brigade"
+  [[gateway.in]]
+  account="slack.openoakland"
+  channel="leadership"
