@@ -328,7 +328,7 @@ name="organizing-feed"
 enable=true
   [[gateway.out]]
   account="slack.civictechto"
-  channel="organizing-feed"
+  channel="organizing-feed" # private: patcon-only
 
   [[gateway.in]]
   account="slack.civictechto"
