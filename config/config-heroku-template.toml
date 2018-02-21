@@ -340,15 +340,18 @@ enable=true
     "slack.civictechto",
   ]
 
-[[samechannelgateway]]
-  name="oakland-berkeley"
-  enable=true
-  channels = ["oakland-berkeley"]
-  accounts = [
-    "slack.cfa",
-    "slack.codeforberkeley",
-    "slack.openoakland",
-  ]
+[[gateway]]
+name="oakland-berkeley"
+enable=true
+  [[gateway.inout]]
+  account="slack.cfa"
+  channel="oakland-berkeley"
+  [[gateway.inout]]
+  account="slack.codeforberkeley"
+  channel="oakland-berkeley"
+  [[gateway.inout]]
+  account="slack.openoakland"
+  channel="oakland-berkeley"
 
 [[gateway]]
 name="organizing-feed"
