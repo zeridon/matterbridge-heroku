@@ -324,13 +324,14 @@ enable=true
   channel="organizing-canada"
 
 [[samechannelgateway]]
-  name="cira-grant-2018"
-  enable=true
-  channels = ["cira-grant-2018"]
-  accounts = [
-    "slack.yowcivictech",
-    "slack.civictechto",
-  ]
+name="cira-grant-2018"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="cira-grant-2018"
+  [[gateway.inout]]
+  account="slack.yowcivictech"
+  channel="cira-grant-2018"
 
 [[gateway]]
 name="organizing-feed"
@@ -341,7 +342,7 @@ enable=true
 
   [[gateway.in]]
   account="slack.civictechto"
-  channel="organizing-open"
+  channel="operations"
   [[gateway.in]]
   account="slack.civictechlondon"
   channel="organizing"
