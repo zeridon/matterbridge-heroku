@@ -13,10 +13,6 @@ RemoteNickFormat="{NICK} ({BRIDGE}): "
 [slack.betanyc]
 Token="${SLACK_BETANYC_TOKEN}" # real user: bridgebot-patcon
 
-[slack.cfa]
-Token="${SLACK_CFA_TOKEN}" # real user: patcon
-ShowJoinPart=true
-
 [slack.civictechfredericton]
 Token="${SLACK_CIVICTECHFREDERICTON_TOKEN}" # real user: patcon
 ShowJoinPart=true
@@ -39,10 +35,6 @@ ShowJoinPart=true
 
 [slack.codeforall]
 Token="${SLACK_CODEFORALL_TOKEN}" # real user: patcon
-ShowJoinPart=true
-
-[slack.codeforberkeley]
-Token="${SLACK_CODEFORBERKELEY_TOKEN}" # real user: patcon
 ShowJoinPart=true
 
 [slack.g0v-tw]
@@ -339,19 +331,6 @@ enable=true
     "slack.yowcivictech",
     "slack.civictechto",
   ]
-
-[[gateway]]
-name="oakland-berkeley"
-enable=true
-  [[gateway.inout]]
-  account="slack.cfa"
-  channel="oakland-berkeley"
-  [[gateway.inout]]
-  account="slack.codeforberkeley"
-  channel="oakland-berkeley"
-  [[gateway.inout]]
-  account="slack.openoakland"
-  channel="oakland-berkeley"
 
 [[gateway]]
 name="organizing-feed"
