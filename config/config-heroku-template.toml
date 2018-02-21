@@ -341,7 +341,7 @@ enable=true
 
   [[gateway.in]]
   account="slack.civictechto"
-  channel="operations"
+  channel="organizing-open"
   [[gateway.in]]
   account="slack.civictechlondon"
   channel="organizing"
