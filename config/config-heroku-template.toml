@@ -37,6 +37,10 @@ ShowJoinPart=true
 Token="${SLACK_CODEFORALL_TOKEN}" # real user: patcon
 ShowJoinPart=true
 
+[slack.codeforberkeley]
+Token="${SLACK_CODEFORBERKELEY_TOKEN}" # real user: patcon
+ShowJoinPart=true
+
 [slack.g0v-tw]
 Token="${SLACK_G0VTW_TOKEN}" # real user: bridgebot-patcon
 
@@ -330,6 +334,15 @@ enable=true
   accounts = [
     "slack.yowcivictech",
     "slack.civictechto",
+  ]
+
+[[samechannelgateway]]
+  name="oakland-berkeley"
+  enable=true
+  channels = ["oakland-berkeley"]
+  accounts = [
+    "slack.codeforberkeley",
+    "slack.openoakland",
   ]
 
 [[gateway]]
