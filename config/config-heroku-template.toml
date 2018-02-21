@@ -13,6 +13,10 @@ RemoteNickFormat="{NICK} ({BRIDGE}): "
 [slack.betanyc]
 Token="${SLACK_BETANYC_TOKEN}" # real user: bridgebot-patcon
 
+[slack.cfa]
+Token="${SLACK_CFA_TOKEN}" # real user: patcon
+ShowJoinPart=true
+
 [slack.civictechfredericton]
 Token="${SLACK_CIVICTECHFREDERICTON_TOKEN}" # real user: patcon
 ShowJoinPart=true
@@ -341,6 +345,7 @@ enable=true
   enable=true
   channels = ["oakland-berkeley"]
   accounts = [
+    "slack.cfa",
     "slack.codeforberkeley",
     "slack.openoakland",
   ]
