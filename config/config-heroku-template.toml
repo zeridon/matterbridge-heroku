@@ -351,7 +351,7 @@ enable=true
   channel="codeacross-c-parkdale"
   [[gateway.inout]]
   account="gitter.gitter"
-  channel="civictechto/codeacross-c-parkdale"
+  channel="CivicTechTO/codeacross-c-parkdale"
 
 [[gateway]]
 name="oakland-berkeley"
