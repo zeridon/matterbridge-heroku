@@ -341,6 +341,18 @@ enable=true
   account="slack.civictechto"
   channel="cira-grant-2018"
 
+# CodeAcross 2018
+
+[[gateway]]
+name="codeacross-c-parkdale"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="codeacross-c-parkdale"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="civictechto/codeacross-c-parkdale"
+
 [[gateway]]
 name="oakland-berkeley"
 enable=true
