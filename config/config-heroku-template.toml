@@ -418,13 +418,13 @@ name="news-intl"
 enable=true
   [[gateway.inout]]
   account="slack.cfa"
-  channel="C9GL05HU6" #news-intl
+  channel="news-intl"
   [[gateway.inout]]
   account="slack.civictechto"
-  channel="C9FPTUM1S" #news-intl
+  channel="news-intl"
   [[gateway.inout]]
   account="slack.g0v-tw"
-  channel="C30F846JU" #news
+  channel="news"
 
 [[gateway]]
 name="oakland-berkeley"
