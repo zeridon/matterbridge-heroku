@@ -47,6 +47,7 @@ ShowJoinPart=true
 
 [slack.g0v-tw]
 Token="${SLACK_G0VTW_TOKEN}" # real user: bridgebot-patcon
+ShowJoinPart=true
 
 [slack.openoakland]
 Token="${SLACK_OPENOAKLAND_TOKEN}" # real user: patcon
