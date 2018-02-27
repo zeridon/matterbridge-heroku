@@ -344,6 +344,56 @@ enable=true
 # CodeAcross 2018
 
 [[gateway]]
+name="codeacross-c-3ptydata"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="codeacross-c-3ptydata"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/codeacross-c-3ptydata"
+
+[[gateway]]
+name="codeacross-c-commutng"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="codeacross-c-commutng"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/codeacross-c-commutng"
+
+[[gateway]]
+name="codeacross-c-jobtrnds"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="codeacross-c-jobtrnds"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/codeacross-c-jobtrnds"
+
+[[gateway]]
+name="codeacross-c-justice"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="codeacross-c-justice"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/codeacross-c-justice"
+
+[[gateway]]
+name="codeacross-c-library"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="codeacross-c-library"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/codeacross-c-library"
+
+[[gateway]]
 name="codeacross-c-parkdale"
 enable=true
   [[gateway.inout]]
@@ -352,6 +402,16 @@ enable=true
   [[gateway.inout]]
   account="gitter.gitter"
   channel="CivicTechTO/codeacross-c-parkdale"
+
+[[gateway]]
+name="codeacross-c-students"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="codeacross-c-students"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/codeacross-c-students"
 
 [[gateway]]
 name="oakland-berkeley"
