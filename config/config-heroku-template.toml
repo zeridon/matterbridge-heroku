@@ -405,6 +405,16 @@ enable=true
   channel="CivicTechTO/codeacross-c-parkdale"
 
 [[gateway]]
+name="codeacross-c-safework"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="codeacross-c-safework"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/codeacross-c-safework"
+
+[[gateway]]
 name="codeacross-c-students"
 enable=true
   [[gateway.inout]]
