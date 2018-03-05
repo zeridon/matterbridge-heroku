@@ -475,3 +475,12 @@ enable=true
   [[gateway.in]]
   account="slack.openoakland"
   channel="leadership"
+
+[[samechannelgateway]]
+  name="bridge-testing"
+  enable=true
+  channels = ["bridge-testing"]
+  accounts = [
+    "slack.civictechto",
+    "slack.g0v-tw",
+  ]
