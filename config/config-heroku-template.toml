@@ -479,7 +479,10 @@ enable=true
 [[samechannelgateway]]
   name="bridge-testing"
   enable=true
-  channels = ["bridge-testing"]
+  channels = [
+    "bridge-testing",
+    "rightscon-2018",
+  ]
   accounts = [
     "slack.civictechto",
     "slack.g0v-tw",
