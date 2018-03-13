@@ -477,11 +477,12 @@ enable=true
   channel="leadership"
 
 [[samechannelgateway]]
-  name="bridge-testing"
+  name="can-tw-relations"
   enable=true
   channels = [
     "bridge-testing",
     "rightscon-2018",
+    "facilitation-fest-nyc",
   ]
   accounts = [
     "slack.civictechto",
