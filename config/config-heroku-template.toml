@@ -150,6 +150,18 @@ enable=true
   channel="webmonitoring"
 
 [[gateway]]
+name="edgi-public-lobby"
+enable=true
+  [[gateway.inout]]
+  account="slack.edgi"
+  channel="public-lobby"
+  [[gateway.inout]]
+  account="slack.archivers"
+  channel="public-lobby"
+  account="gitter.gitter"
+  channel="edgi-govdata-archiving/Lobby"
+
+[[gateway]]
 name="oc-edgi"
 enable=false # archived on EDGI side
   [[gateway.inout]]
