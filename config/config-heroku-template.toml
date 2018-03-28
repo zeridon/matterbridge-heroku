@@ -358,11 +358,14 @@ enable=true
 # CodeAcross 2018
 
 [[gateway]]
-name="codeacross-c-3ptydata"
+name="3rd-party-data"
 enable=true
   [[gateway.inout]]
   account="slack.civictechto"
-  channel="codeacross-c-3ptydata"
+  channel="3rd-party-data"
+  [[gateway.inout]]
+  account="slack.yowcivictech"
+  channel="3rd-party-data"
   [[gateway.inout]]
   account="gitter.gitter"
   channel="CivicTechTO/codeacross-c-3ptydata"
