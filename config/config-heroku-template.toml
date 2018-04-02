@@ -334,6 +334,16 @@ enable=true
   channel="CivicTechTO/Lobby"
 
 [[gateway]]
+name="civictechto-speaker-questions"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="org-speaker-questions"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/speaker-questions"
+
+[[gateway]]
 name="organizing-canada"
 enable=true
   [[gateway.inout]]
