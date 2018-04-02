@@ -324,6 +324,16 @@ enable=true
   channel="holopolis"
 
 [[gateway]]
+name="civictechto-lobby"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="public-lobby"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/Lobby"
+
+[[gateway]]
 name="organizing-canada"
 enable=true
   [[gateway.inout]]
