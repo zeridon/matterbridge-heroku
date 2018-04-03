@@ -95,6 +95,9 @@ Token="${SLACK_MUCKROCK_TOKEN}" # matterbridge-bot user
 [slack.opencollective]
 Token="${SLACK_OPENCOLLECTIVE_TOKEN}" # real user
 
+[slack.metapolis]
+Token="${SLACK_METAPOLIS_TOKEN}" # real user: patcon
+
 [gitter.gitter]
 Token="${GITTER_BRIDGEBOT_TOKEN}" # bot user: gitterbridgebot twitter account
 RemoteNickFormat="**{NICK}** ({PROTOCOL}): "
@@ -322,6 +325,16 @@ enable=true
   [[gateway.inout]]
   account="slack.g0v-tw"
   channel="holopolis"
+
+[[gateway]]
+name="metapolis-gitter"
+enable=true
+  [[gateway.inout]]
+  account="slack.metapolis"
+  channel="gitter-general"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="polis-overview/Lobby"
 
 [[gateway]]
 name="civictechto-lobby"
