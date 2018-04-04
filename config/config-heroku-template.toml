@@ -487,6 +487,16 @@ enable=true
   channel="news"
 
 [[gateway]]
+name="open-proj-experiment"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="open-proj-experiment"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/open-proj-experiment"
+
+[[gateway]]
 name="oakland-berkeley"
 enable=true
   [[gateway.inout]]
