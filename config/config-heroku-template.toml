@@ -475,13 +475,13 @@ enable=true
 
 [[gateway]]
 name="open-proj-experiment"
-enable=false
+enable=true
   [[gateway.inout]]
   account="slack.civictechto"
   channel="open-proj-experiment"
   [[gateway.inout]]
   account="gitter.gitter"
-  channel="CivicTechTO/open-proj-experiment"
+  channel="open-proj-experiment/Lobby"
 
 [[gateway]]
 name="news-intl"
