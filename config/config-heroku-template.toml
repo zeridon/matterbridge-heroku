@@ -494,7 +494,7 @@ enable=true
   channel="open-proj-experiment"
   [[gateway.inout]]
   account="gitter.gitter"
-  channel="CivicTechTO/open-project"
+  channel="CivicTechTO/Lobby"
 
 [[gateway]]
 name="oakland-berkeley"
