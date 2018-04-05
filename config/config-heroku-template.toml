@@ -474,8 +474,8 @@ enable=true
   channel="CivicTechTO/codeacross-c-students"
 
 [[gateway]]
-name="open-proj-experiment"
-enable=true
+name="open-project"
+enable=
   [[gateway.inout]]
   account="slack.civictechto"
   channel="open-proj-experiment"
