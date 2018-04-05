@@ -487,8 +487,8 @@ enable=true
   channel="news"
 
 [[gateway]]
-name="civictech-open-proj-experiment"
-enable=true
+name="open-proj-experiment"
+enable=false
   [[gateway.inout]]
   account="slack.civictechto"
   channel="open-proj-experiment"
