@@ -474,6 +474,16 @@ enable=true
   channel="CivicTechTO/codeacross-c-students"
 
 [[gateway]]
+name="open-proj-experiment"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="open-proj-experiment"
+  [[gateway.inout]]
+  account="gitter.gitter"
+  channel="CivicTechTO/testing"
+
+[[gateway]]
 name="news-intl"
 enable=true
   [[gateway.inout]]
@@ -485,16 +495,6 @@ enable=true
   [[gateway.inout]]
   account="slack.g0v-tw"
   channel="news"
-
-[[gateway]]
-name="open-proj-experiment"
-enable=true
-  [[gateway.inout]]
-  account="slack.civictechto"
-  channel="open-proj-experiment"
-  [[gateway.inout]]
-  account="gitter.gitter"
-  channel="CivicTechTO/Lobby"
 
 [[gateway]]
 name="oakland-berkeley"
