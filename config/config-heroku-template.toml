@@ -475,7 +475,7 @@ enable=true
 
 [[gateway]]
 name="open-project"
-enable=
+enable=true
   [[gateway.inout]]
   account="slack.civictechto"
   channel="open-proj-experiment"
