@@ -474,14 +474,14 @@ enable=true
   channel="CivicTechTO/codeacross-c-students"
 
 [[gateway]]
-name="open-project"
-enable=true
+name="open-proj-experiment"
+enable=false
   [[gateway.inout]]
   account="slack.civictechto"
   channel="open-proj-experiment"
   [[gateway.inout]]
   account="gitter.gitter"
-  channel="CivicTechTO/testing"
+  channel="CivicTechTO/open-proj-experiment"
 
 [[gateway]]
 name="news-intl"
