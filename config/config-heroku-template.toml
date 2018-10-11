@@ -1,5 +1,5 @@
 [general]
-RemoteNickFormat="{NICK} ({BRIDGE}): "
+RemoteNickFormat="{NICK} (#{CHANNEL}@{BRIDGE}): "
 # Show messages announcing when people arrive/leave remote channels
 
 #[slack.example]
