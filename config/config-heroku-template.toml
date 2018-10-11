@@ -13,18 +13,18 @@ Token="${SLACK_G0VTW_TOKEN}" # real user: bridgebot-patcon
 ShowJoinPart=true
 
 [[gateway]]
-name="i18n-test"
+name="tech-workers-coop"
 enable=true
   [[gateway.inout]]
   account="slack.g0v-tw"
-  channel="i18n-test-en"
-    [gateway.inout.options]
-    locale="en"
-  [[gateway.inout]]
-  account="slack.g0v-tw"
-  channel="i18n-test-tw"
+  channel="twc-g0v"
     [gateway.inout.options]
     locale="zh-TW"
+  [[gateway.inout]]
+  account="slack.g0v-tw"
+  channel="twc-g0v-en"
+    [gateway.inout.options]
+    locale="en"
 
 [[gateway]]
 name="vtaiwan"
