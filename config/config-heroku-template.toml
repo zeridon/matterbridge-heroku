@@ -39,3 +39,18 @@ enable=true
   channel="vtaiwan-en"
     [gateway.inout.options]
     locale="en"
+
+
+[[gateway]]
+name="i18n-test"
+enable=true
+  [[gateway.inout]]
+  account="slack.g0v-tw"
+  channel="i18n-test-tw"
+    [gateway.inout.options]
+    locale="zh-TW"
+  [[gateway.inout]]
+  account="slack.g0v-tw"
+  channel="i18n-test-en"
+    [gateway.inout.options]
+    locale="en"
