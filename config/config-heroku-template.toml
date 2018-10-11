@@ -8,6 +8,10 @@ RemoteNickFormat="{NICK} (#{CHANNEL}@{BRIDGE}): "
 ##See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
 #Token="${SLACK_EXAMPLE_TOKEN}" # real user
 
+[slack.civictechto]
+Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
+ShowJoinPart=true
+
 [slack.g0v-tw]
 Token="${SLACK_G0VTW_TOKEN}" # real user: bridgebot-patcon
 ShowJoinPart=true
@@ -37,6 +41,11 @@ enable=true
   [[gateway.inout]]
   account="slack.g0v-tw"
   channel="vtaiwan-en"
+    [gateway.inout.options]
+    locale="en"
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="vtaiwan"
     [gateway.inout.options]
     locale="en"
 
