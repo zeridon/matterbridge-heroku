@@ -67,13 +67,13 @@ enable=true
 [[gateway]]
 name="general"
 enable=true
-  [[gateway.in]]
+  [[gateway.inout]]
   account="slack.g0v-tw"
   channel="general"
-    [gateway.in.options]
+    [gateway.inout.options]
     locale="zh-TW"
-  [[gateway.out]]
+  [[gateway.inout]]
   account="slack.g0v-tw"
   channel="general-en"
-    [gateway.out.options]
+    [gateway.inout.options]
     locale="en"
