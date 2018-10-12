@@ -63,3 +63,17 @@ enable=true
   channel="i18n-test-en"
     [gateway.inout.options]
     locale="en"
+
+[[gateway]]
+name="general"
+enable=true
+  [[gateway.out]]
+  account="slack.g0v-tw"
+  channel="general"
+    [gateway.out.options]
+    locale="zh-TW"
+  [[gateway.in]]
+  account="slack.g0v-tw"
+  channel="general-en"
+    [gateway.in.options]
+    locale="en"
