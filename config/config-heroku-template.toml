@@ -1,6 +1,6 @@
 [general]
 RemoteNickFormat="{NICK} ({CHANNEL}@{BRIDGE}): "
-# Show messages announcing when people arrive/leave remote channels
+TranslationAttribution=" [translated by :google:]"
 
 ## ACCOUNTS
 
