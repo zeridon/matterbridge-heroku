@@ -16,7 +16,8 @@ ShowJoinPart=true
 
 [slack.g0v-tw]
 Token="${SLACK_G0VTW_TOKEN}" # real user: bridgebot-patcon
-ShowJoinPart=true
+# Too noisy. Related: https://github.com/42wim/matterbridge/issues/524
+ShowJoinPart=false
 
 [irc.irc]
 Server="chat.freenode.net:6697"
