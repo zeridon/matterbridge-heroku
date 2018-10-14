@@ -92,6 +92,11 @@ enable=true
     locale="zh-TW"
   [[gateway.inout]]
   account="slack.g0v-tw"
+  channel="general-tw"
+    [gateway.inout.options]
+    locale="zh-TW"
+  [[gateway.inout]]
+  account="slack.g0v-tw"
   channel="general-en"
     [gateway.inout.options]
     locale="en"
