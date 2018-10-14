@@ -1,5 +1,5 @@
 [general]
-RemoteNickFormat="{NICK} (#{CHANNEL}@{BRIDGE}): "
+RemoteNickFormat="{NICK} ({CHANNEL}@{BRIDGE}): "
 # Show messages announcing when people arrive/leave remote channels
 
 ## ACCOUNTS
@@ -101,6 +101,16 @@ enable=true
   channel="general-en"
     [gateway.inout.options]
     locale="en"
+  [[gateway.inout]]
+  account="slack.g0v-tw"
+  channel="general-ko"
+    [gateway.inout.options]
+    locale="ko"
+  [[gateway.inout]]
+  account="slack.g0v-tw"
+  channel="general-ja"
+    [gateway.inout.options]
+    locale="ja"
   #[[gateway.inout]]
   #  account="telegram.telegram"
   #  channel="-1001210052391" # g0v group
