@@ -1,6 +1,7 @@
 [general]
 RemoteNickFormat="{NICK} ({CHANNEL}@{BRIDGE}): "
 TranslationAttribution=" [translated by :google:]"
+IgnoreNicks="slackbot"
 
 ## ACCOUNTS
 
@@ -89,8 +90,6 @@ enable=true
   [[gateway.inout]]
   account="slack.g0v-tw"
   channel="general"
-    [gateway.inout.options]
-    locale="zh-TW"
   [[gateway.inout]]
   account="slack.g0v-tw"
   channel="general-tw"
