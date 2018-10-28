@@ -39,6 +39,15 @@ Archivers Slack teams.
   request process.
 * Edit channel bridge config via [`config/config-heroku-template.toml`][config].
 
+## Related Projects
+
+- [**Matterbridge Config Viewer.**][viewer] Render a Matterbridge config
+  file as a simple read-only web app.
+- [**Matterbridge Auto-Config.**][autoconfig] Generate a config file
+  based on Slack channel naming conventions.
+
    [bot-setup]: https://github.com/42wim/matterbridge/wiki/Slack-bot-setup
    [git-tags]: https://github.com/42wim/matterbridge/tags
    [config]: config/config-heroku-template.toml
+   [viewer]: https://github.com/patcon/matterbridge-heroku-viewer
+   [autoconfig]: https://github.com/patcon/matterbridge-autoconfig/
