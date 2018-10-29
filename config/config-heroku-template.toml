@@ -12,11 +12,11 @@ IgnoreNicks="slackbot"
 #Token="${SLACK_EXAMPLE_TOKEN}" # real user
 
 [slack.civictechto]
-Token="${SLACK_CIVICTECHTO_TOKEN}" # bot user
+# Token= # bot user # set in envvar
 ShowJoinPart=true
 
 [slack.g0vtw]
-Token="${SLACK_G0VTW_TOKEN}" # real user: bridgebot-patcon
+# Token= # real user: bridgebot-patcon # set in envvar
 # Too noisy. Related: https://github.com/42wim/matterbridge/issues/524
 ShowJoinPart=false
 
@@ -26,11 +26,11 @@ Nick="g0v-bridgebot"
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 UseTLS=true
 UseSASL=true
-NickServNick="${IRC_USERNAME}"
-NickServPassword="${IRC_PASSWORD}"
+# NickServNick= # set in envvar
+# NickServPassword= # set in envvar
 
 [telegram.telegram]
-Token="${TELEGRAM_TOKEN}" # bot user: hacklabto_bridgebot
+# Token= # bot user: hacklabto_bridgebot # set in envvar
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 UseInsecureURL=true
 
