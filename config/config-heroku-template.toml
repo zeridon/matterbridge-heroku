@@ -86,6 +86,9 @@ enable=true
   channel="i18n-test-en"
     [gateway.inout.options]
     locale="en"
+  [[gateway.inout]]
+  account="api.local"
+  channel="api"
 
 [[gateway]]
 name="general"
