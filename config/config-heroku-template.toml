@@ -20,6 +20,9 @@ ShowJoinPart=true
 # Too noisy. Related: https://github.com/42wim/matterbridge/issues/524
 ShowJoinPart=false
 
+[api.local]
+BindAddress="0.0.0.0:${PORT}"
+
 [irc.irc]
 Server="chat.freenode.net:6697"
 Nick="g0v-bridgebot"
