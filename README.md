@@ -39,6 +39,28 @@ Archivers Slack teams.
   request process.
 * Edit channel bridge config via [`config/config-heroku-template.toml`][config].
 
+## Setting Matterbridge Configuration
+
+Matterbridge uses Viper, and so each value in the TOML configuration can
+be set by envvar.
+
+Basically, here are the rules:
+
+- Each config envvar is prefixed with `MATTERBRIDGE_`.
+- Each nested level of config object is separated by an underscore `_`.
+- Any dash in a config key is converted to an underscore `_`.
+
+So for example, with this in your TOML config:
+
+```toml
+[slack.g0v-tw]
+Token="xoxp-xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+
+You could instead set an environment variable for
+`MATTERBRIDGE_SLACK_G0V_TW_TOKEN` and leave that key out of in the
+configuration file template.
+
 ## Related Projects
 
 - [**Matterbridge Config Viewer.**][viewer] Render a Matterbridge config
