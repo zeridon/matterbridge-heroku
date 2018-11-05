@@ -61,6 +61,58 @@ You could instead set an environment variable for
 `MATTERBRIDGE_SLACK_G0V_TW_TOKEN` and leave that key out of in the
 configuration file template.
 
+## Using API Endpoints
+
+Matterbridge uses API endpoints for some things, like the API bridge and
+webhooks. In order to bind to a port and serve HTTP pages, the app must
+be run as a "web" dyno. If there is no need for HTTP endpoints (ie. no
+API nor incoming webhook access) then the app can be run as a "worker"
+dyno. The catch of using a web dyno is that it will fall asleep after 30
+minutes of no incoming requests. This is bad if we're depending on this
+bridge to be running all the time.
+
+To get around this, we can enable Heroku's "scheduler" add-on service.
+It is essentially like cron. We will set it up to hit our own app every
+10 minutes, therefore keeping it from sleeping. If you have the [Heroku
+CLI][heroku-cli] installed, you can enable this like so, from your
+project repo:
+
+   [heroku-cli]: https://devcenter.heroku.com/articles/heroku-cli
+
+```
+heroku addons:create scheduler
+heroku addons:open scheduler
+```
+
+If you don't have Heroku CLI, you will need to configure this manually
+from the Heroku website.
+
+Now, using the web interface, create a task to run this command every 10
+minutes:
+
+```
+curl --silent --head https://matterbridge-heroku-g0vtw.herokuapp.com/api/ping > /dev/null
+```
+
+Now that you're ready to keep the app awake, just switch over from using
+the "worker" dyno to using the "web" dyno. (Both are defined in the
+`Procfile`.)
+
+```
+# Via Heroku CLI:
+heroku ps:scale worker=0 web=1
+# Without Heroku CLI, do it from the Heroku web interface
+```
+
+
+Ok, now you're all set to go! But **be WARNED**, Heroku only gives out
+enough free hours to allow a single app to run continuously like this.
+If you have any other apps running, this will make you run over, and
+charges will likely result. But perhaps most importantly, **all your
+other apps will immediately stop working**. Paying $7/month for a hobby
+dyno will allow for a "web" dyno that never sleeps, and so this
+work-around won't be required.
+
 ## Related Projects
 
 - [**Matterbridge Config Viewer.**][viewer] Render a Matterbridge config
