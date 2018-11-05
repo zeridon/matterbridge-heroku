@@ -91,7 +91,7 @@ Now, using the web interface, create a task to run this command every 10
 minutes:
 
 ```
-curl --silent --head https://matterbridge-heroku-g0vtw.herokuapp.com/api/ping > /dev/null
+curl --silent --head https://MY-APP-NAME.herokuapp.com/api/ping > /dev/null
 ```
 
 Now that you're ready to keep the app awake, just switch over from using
