@@ -2,6 +2,7 @@
 RemoteNickFormat="{NICK} ({CHANNEL}@{BRIDGE}): "
 TranslationAttribution=" [translated by :google:]"
 IgnoreNicks="slackbot"
+PreserveThreading=true
 
 ## ACCOUNTS
 
