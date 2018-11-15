@@ -4,7 +4,7 @@ TranslationAttribution=" [translated by :google:]"
 IgnoreNicks="slackbot"
 PreserveThreading=true
 ShowUserTyping=true
-MediaDownloadSize=1500000
+MediaDownloadSize=1000000
 
 ## ACCOUNTS
 
