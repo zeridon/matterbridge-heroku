@@ -14,6 +14,8 @@ MediaDownloadSize=1000000
 ##See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
 #Token="${SLACK_EXAMPLE_TOKEN}" # real user
 
+[slack.matterbridge]
+
 [slack.civictechto]
 # Token= # bot user # set in envvar
 ShowJoinPart=true
@@ -38,6 +40,16 @@ RemoteNickFormat="{NICK}@{PROTOCOL}: "
 UseInsecureURL=true
 
 ## GATEWAYS & BRIDGES
+
+[[gateway]]
+name="matterbridge"
+enable=true
+  [[gateway.inout]]
+  account="slack.g0vtw"
+  channel="chat-bridge"
+  [[gateway.inout]]
+  account="slack.matterbridge"
+  channel="general"
 
 [[gateway]]
 name="tech-workers-coop"
