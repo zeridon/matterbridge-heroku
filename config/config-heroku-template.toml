@@ -153,7 +153,7 @@ enable=true
   account="slack.civictechto"
   channel="vnetwork"
   [[gateway.inout]]
-  account="slack.g0v-tw"
+  account="slack.g0vtw"
   channel="vnetwork"
   [[gateway.inout]]
   account="slack.betanyc"
@@ -169,7 +169,7 @@ enable=true
   account="slack.civictechto"
   channel="holopolis"
   [[gateway.inout]]
-  account="slack.g0v-tw"
+  account="slack.g0vtw"
   channel="holopolis"
 
 [[gateway]]
