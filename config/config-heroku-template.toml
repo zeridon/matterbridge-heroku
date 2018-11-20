@@ -1,10 +1,10 @@
 [general]
 RemoteNickFormat="{NICK} ({CHANNEL}@{BRIDGE}): "
 TranslationAttribution=" [translated by :google:]"
-IgnoreNicks="slackbot"
 PreserveThreading=true
 ShowUserTyping=true
 MediaDownloadSize=1000000
+ShowJoinPart=true
 
 ## ACCOUNTS
 
@@ -14,14 +14,23 @@ MediaDownloadSize=1000000
 ##See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
 #Token="${SLACK_EXAMPLE_TOKEN}" # real user
 
-[slack.matterbridge]
+[slack.betanyc]
+# Token=$MATTERBRIDGE_SLACK_BETANYC_TOKEN # legacy token (user: bridgebot-patcon) # set in envvar
+
+[slack.cfjapan]
+# Token=$MATTERBRIDGE_SLACK_CFJAPAN_TOKEN # legacy token (user: patcon) # set in envvar
 
 [slack.civictechto]
-# Token= # bot user # set in envvar
-ShowJoinPart=true
+# Token=$MATTERBRIDGE_SLACK_CIVICTECHTO_TOKEN # bot token # set in envvar
+
+[slack.matterbridge]
+# Token=$MATTERBRIDGE_SLACK_MATTERBRIDGE_TOKEN # legacy token (user: patcon)# set in envvar
+
+[slack.metapolis]
+# Token=$MATTERBRIDGE_SLACK_METAPOLIS_TOKEN # legacy token (user: patcon) # set in envvar
 
 [slack.g0vtw]
-# Token= # real user: bridgebot-patcon # set in envvar
+# Token=$MATTERBRIDGE_SLACK_G0VTW_TOKEN # legacy token (user: bridgebot-patcon) # set in envvar
 # Too noisy. Related: https://github.com/42wim/matterbridge/issues/524
 ShowJoinPart=false
 
@@ -83,6 +92,11 @@ enable=true
   channel="vtaiwan"
     [gateway.inout.options]
     locale="en"
+  #[[gateway.inout]]
+  #account="slack.cfjapan"
+  #channel="vtaiwan"
+  #  [gateway.inout.options]
+  #  locale="en"
 
 
 [[gateway]]
@@ -131,3 +145,41 @@ enable=true
   #[[gateway.inout]]
   #  account="irc.irc"
   #  channel="#g0v.tw"
+
+[[gateway]]
+name="vnetwork"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="vnetwork"
+  [[gateway.inout]]
+  account="slack.g0v-tw"
+  channel="vnetwork"
+  [[gateway.inout]]
+  account="slack.betanyc"
+  channel="vnetwork"
+  #[[gateway.inout]]
+  #account="slack.cfjapan"
+  #channel="vnetwork"
+
+[[gateway]]
+name="holopolis"
+enable=true
+  [[gateway.inout]]
+  account="slack.civictechto"
+  channel="holopolis"
+  [[gateway.inout]]
+  account="slack.g0v-tw"
+  channel="holopolis"
+
+[[gateway]]
+name="cfj-general"
+enable=true
+  [[gateway.inout]]
+  account="slack.cfjapan"
+  channel="general"
+  [[gateway.inout]]
+  account="slack.cfjapan"
+  channel="general-en"
+    [gateway.inout.options]
+    locale="en"
