@@ -97,6 +97,7 @@ enable=true
   channel="vtaiwan-ja"
     #[gateway.inout.options]
     #locale="ja"
+  [[gateway.inout]]
   account="slack.cfjapan"
   channel="vtaiwan"
 
