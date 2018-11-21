@@ -79,9 +79,12 @@ name="vtaiwan"
 enable=true
   [[gateway.inout]]
   account="slack.g0vtw"
-  channel="vtaiwan"
+  channel="vtaiwan-tw"
     [gateway.inout.options]
     locale="zh-TW"
+  [[gateway.inout]]
+  account="slack.g0vtw"
+  channel="vtaiwan"
   [[gateway.inout]]
   account="slack.g0vtw"
   channel="vtaiwan-en"
