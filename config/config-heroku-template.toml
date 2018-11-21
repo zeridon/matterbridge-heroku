@@ -92,11 +92,13 @@ enable=true
   channel="vtaiwan"
     [gateway.inout.options]
     locale="en"
-  #[[gateway.inout]]
-  #account="slack.cfjapan"
-  #channel="vtaiwan"
-  #  [gateway.inout.options]
-  #  locale="en"
+  [[gateway.inout]]
+  account="slack.cfjapan"
+  channel="vtaiwan-ja"
+    [gateway.inout.options]
+    locale="ja"
+  account="slack.cfjapan"
+  channel="vtaiwan"
 
 
 [[gateway]]
