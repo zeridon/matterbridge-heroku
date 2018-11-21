@@ -164,9 +164,9 @@ enable=true
   [[gateway.inout]]
   account="slack.betanyc"
   channel="vnetwork"
-  #[[gateway.inout]]
-  #account="slack.cfjapan"
-  #channel="vnetwork"
+  [[gateway.inout]]
+  account="slack.cfjapan"
+  channel="vnetwork"
 
 [[gateway]]
 name="holopolis"
