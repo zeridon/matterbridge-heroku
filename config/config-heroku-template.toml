@@ -184,6 +184,8 @@ enable=true
   [[gateway.inout]]
   account="slack.cfjapan"
   channel="general"
+    [gateway.inout.options]
+    locale="ja"
   [[gateway.inout]]
   account="slack.cfjapan"
   channel="general-en"
