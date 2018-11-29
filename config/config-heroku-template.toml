@@ -110,18 +110,31 @@ enable=true
 
 
 [[gateway]]
-name="i18n-test"
+name="chatbridge-test"
 enable=true
   [[gateway.inout]]
-  account="slack.g0vtw"
-  channel="i18n-test-tw"
+    account="slack.g0vtw"
+    channel="i18n-test-tw"
     [gateway.inout.options]
-    locale="zh-TW"
+      locale="zh-TW"
   [[gateway.inout]]
-  account="slack.g0vtw"
-  channel="i18n-test-en"
+    account="slack.g0vtw"
+    channel="i18n-test-en"
     [gateway.inout.options]
-    locale="en"
+      locale="en"
+  [[gateway.inout]]
+    account="slack.cfjapan"
+    channel="chatbridge-test"
+  [[gateway.inout]]
+    account="slack.cfjapan"
+    channel="chatbridge-test-en"
+    [gateway.inout.options]
+      locale="en"
+  [[gateway.inout]]
+    account="slack.cfjapan"
+    channel="i18n-test-ja"
+    [gateway.inout.options]
+      locale="ja"
 
 [[gateway]]
 name="general"
