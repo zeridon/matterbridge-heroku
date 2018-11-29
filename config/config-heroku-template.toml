@@ -1,8 +1,9 @@
 [general]
-RemoteNickFormat="{NICK} ({CHANNEL}@{BRIDGE}): "
-TranslationAttribution=" [translated by :google:]"
+RemoteNickFormat="{NICK} ({CHANNEL}@{BRIDGE})"
+TranslationAttribution="g0v translation bridge (translated by Google)"
 PreserveThreading=true
 ShowUserTyping=true
+SyncTopic=true
 MediaDownloadSize=1000000
 ShowJoinPart=true
 # When someone is speaking from a platform without avatars, generate one from usernames
