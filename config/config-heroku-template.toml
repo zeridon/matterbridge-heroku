@@ -21,6 +21,7 @@ IconURL="https://github.com/identicons/{NICK}.png"
 # Token=$MATTERBRIDGE_SLACK_BETANYC_TOKEN # legacy token (user: bridgebot-patcon) # set in envvar
 
 [slack-legacy.cfjapan]
+ShowJoinPart=true
 # Token=$MATTERBRIDGE_SLACK_CFJAPAN_TOKEN # legacy token (user: patcon) # set in envvar
 
 [slack-legacy.civictechto]
