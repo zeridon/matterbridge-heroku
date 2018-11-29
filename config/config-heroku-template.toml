@@ -136,7 +136,7 @@ enable=true
       locale="en"
   [[gateway.inout]]
     account="slack.cfjapan"
-    channel="i18n-test-ja"
+    channel="chatbridge-test-ja"
     [gateway.inout.options]
       locale="ja"
 
