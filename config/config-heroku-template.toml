@@ -19,7 +19,7 @@ IconURL="https://github.com/identicons/{NICK}.png"
 
 ## BOT TOKENS
 
-[slack.g0vtw]
+[slack-legacy.g0vtw]
 # Token=$MATTERBRIDGE_SLACK_G0VTW_TOKEN # legacy token (user: bridgebot-patcon) # set in envvar
 # Too noisy. Related: https://github.com/42wim/matterbridge/issues/524
 ShowJoinPart=false
@@ -62,7 +62,7 @@ UseInsecureURL=true
 name="matterbridge"
 enable=true
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack-legacy.g0vtw"
   channel="chat-bridge"
   [[gateway.inout]]
   account="slack-legacy.matterbridge"
@@ -72,12 +72,12 @@ enable=true
 name="tech-workers-coop"
 enable=true
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack-legacy.g0vtw"
   channel="twc-g0v"
     [gateway.inout.options]
     locale="zh-TW"
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack-legacy.g0vtw"
   channel="twc-g0v-en"
     [gateway.inout.options]
     locale="en"
@@ -86,15 +86,15 @@ enable=true
 name="vtaiwan"
 enable=true
   [[gateway.inout]]
-    account="slack.g0vtw"
+    account="slack-legacy.g0vtw"
     channel="vtaiwan-tw"
     [gateway.inout.options]
       locale="zh-TW"
   [[gateway.inout]]
-    account="slack.g0vtw"
+    account="slack-legacy.g0vtw"
     channel="vtaiwan"
   [[gateway.inout]]
-    account="slack.g0vtw"
+    account="slack-legacy.g0vtw"
     channel="vtaiwan-en"
     [gateway.inout.options]
       locale="en"
@@ -117,12 +117,12 @@ enable=true
 name="chatbridge-test"
 enable=true
   [[gateway.inout]]
-    account="slack.g0vtw"
+    account="slack-legacy.g0vtw"
     channel="i18n-test-tw"
     [gateway.inout.options]
       locale="zh-TW"
   [[gateway.inout]]
-    account="slack.g0vtw"
+    account="slack-legacy.g0vtw"
     channel="i18n-test-en"
     [gateway.inout.options]
       locale="en"
@@ -144,25 +144,25 @@ enable=true
 name="general"
 enable=true
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack-legacy.g0vtw"
   channel="general"
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack-legacy.g0vtw"
   channel="general-tw"
     [gateway.inout.options]
     locale="zh-TW"
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack-legacy.g0vtw"
   channel="general-en"
     [gateway.inout.options]
     locale="en"
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack-legacy.g0vtw"
   channel="general-ko"
     [gateway.inout.options]
     locale="ko"
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack-legacy.g0vtw"
   channel="general-ja"
     [gateway.inout.options]
     locale="ja"
@@ -180,7 +180,7 @@ enable=true
   account="slack.civictechto"
   channel="vnetwork"
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack-legacy.g0vtw"
   channel="vnetwork"
   [[gateway.inout]]
   account="slack-legacy.betanyc"
@@ -196,7 +196,7 @@ enable=true
   account="slack.civictechto"
   channel="holopolis"
   [[gateway.inout]]
-  account="slack.g0vtw"
+  account="slack-legacy.g0vtw"
   channel="holopolis"
 
 [[gateway]]
