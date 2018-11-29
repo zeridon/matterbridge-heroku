@@ -11,28 +11,28 @@ IconURL="https://github.com/identicons/{NICK}.png"
 
 ## ACCOUNTS
 
-#[slack.example]
+#[slack-legacy.example]
 ##Token to connect with the Slack API
 ##You'll have to use a test/api-token using a dedicated user and not a bot token.
 ##See https://github.com/42wim/matterbridge/wiki/Slack-bot-setup for more information
 #Token="${SLACK_EXAMPLE_TOKEN}" # real user
 
-[slack.betanyc]
+[slack-legacy.betanyc]
 # Token=$MATTERBRIDGE_SLACK_BETANYC_TOKEN # legacy token (user: bridgebot-patcon) # set in envvar
 
-[slack.cfjapan]
+[slack-legacy.cfjapan]
 # Token=$MATTERBRIDGE_SLACK_CFJAPAN_TOKEN # legacy token (user: patcon) # set in envvar
 
-[slack.civictechto]
+[slack-legacy.civictechto]
 # Token=$MATTERBRIDGE_SLACK_CIVICTECHTO_TOKEN # bot token # set in envvar
 
-[slack.matterbridge]
+[slack-legacy.matterbridge]
 # Token=$MATTERBRIDGE_SLACK_MATTERBRIDGE_TOKEN # legacy token (user: patcon)# set in envvar
 
-[slack.metapolis]
+[slack-legacy.metapolis]
 # Token=$MATTERBRIDGE_SLACK_METAPOLIS_TOKEN # legacy token (user: patcon) # set in envvar
 
-[slack.g0vtw]
+[slack-legacy.g0vtw]
 # Token=$MATTERBRIDGE_SLACK_G0VTW_TOKEN # legacy token (user: bridgebot-patcon) # set in envvar
 # Too noisy. Related: https://github.com/42wim/matterbridge/issues/524
 ShowJoinPart=false
