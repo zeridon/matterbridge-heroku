@@ -83,6 +83,18 @@ enable=true
     locale="en"
 
 [[gateway]]
+name="jothon"
+enable=true
+  [[gateway.inout]]
+  account="slack-legacy.g0vtw"
+  channel="jothon"
+  [[gateway.inout]]
+  account="slack-legacy.g0vtw"
+  channel="jothon-en"
+    [gateway.inout.options]
+    locale="en"
+
+[[gateway]]
 name="vtaiwan"
 enable=true
   [[gateway.inout]]
