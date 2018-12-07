@@ -24,6 +24,8 @@ IconURL="https://github.com/identicons/{NICK}.png"
 # Too noisy. Related: https://github.com/42wim/matterbridge/issues/524
 ShowJoinPart=false
 
+[api.local]
+
 [slack.cfjapan]
 ShowJoinPart=true
 # Token=$MATTERBRIDGE_SLACK_CFJAPAN_TOKEN # legacy token (user: patcon) # set in envvar
@@ -151,6 +153,8 @@ enable=true
     channel="chatbridge-test-ja"
     [gateway.inout.options]
       locale="ja"
+  [[gateway.inout]]
+    account="api.local"
 
 [[gateway]]
 name="general"
