@@ -153,8 +153,8 @@ enable=true
     channel="chatbridge-test-ja"
     [gateway.inout.options]
       locale="ja"
-  [[gateway.inout]]
-    account="api.local"
+#  [[gateway.inout]]
+#    account="api.local"
 
 [[gateway]]
 name="general"
