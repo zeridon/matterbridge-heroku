@@ -74,15 +74,18 @@ enable=true
 name="tech-workers-coop"
 enable=true
   [[gateway.inout]]
-  account="slack-legacy.g0vtw"
-  channel="twc-g0v"
-    [gateway.inout.options]
-    locale="zh-TW"
+    account="slack-legacy.g0vtw"
+    channel="twc-g0v"
   [[gateway.inout]]
-  account="slack-legacy.g0vtw"
-  channel="twc-g0v-en"
+    account="slack-legacy.g0vtw"
+    channel="twc-g0v-en"
     [gateway.inout.options]
-    locale="en"
+      locale="en"
+  [[gateway.inout]]
+    account="slack-legacy.g0vtw"
+    channel="twc-g0v-tw"
+    [gateway.inout.options]
+      locale="zh-TW"
 
 [[gateway]]
 name="jothon"
