@@ -9,7 +9,7 @@ ShowJoinPart=true
 # When someone is speaking from a platform without avatars, generate one from usernames
 # Note: robohash.org/{NICK}.png allows underscores (which IRC nick's have),
 # whereas github.com/identicons/{NICK}.png doesn't.
-IconURL="https://robohash.org/{NICK}.png?size=48x48"
+IconURL="https://robohash.org/{NICK}.png?size=48x48&set=set4"
 
 ## ACCOUNTS
 
