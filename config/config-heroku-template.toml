@@ -7,7 +7,9 @@ SyncTopic=false
 MediaDownloadSize=1000000
 ShowJoinPart=true
 # When someone is speaking from a platform without avatars, generate one from usernames
-IconURL="https://github.com/identicons/{NICK}.png"
+# Note: robohash.org/{NICK}.png allows underscores (which IRC nick's have),
+# whereas github.com/identicons/{NICK}.png doesn't.
+IconURL="https://robohash.org/{NICK}.png?size=48x48"
 
 ## ACCOUNTS
 
