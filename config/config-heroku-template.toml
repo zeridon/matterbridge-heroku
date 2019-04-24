@@ -23,6 +23,7 @@ IconURL="https://github.com/identicons/{NICK}.png"
 # Token=$MATTERBRIDGE_SLACK_G0VTW_TOKEN # legacy token (user: bridgebot-patcon) # set in envvar
 # Too noisy. Related: https://github.com/42wim/matterbridge/issues/524
 ShowJoinPart=false
+ShowUserTyping=false
 
 [api.local]
 
