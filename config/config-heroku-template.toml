@@ -47,7 +47,8 @@ ShowJoinPart=true
 
 [irc.irc]
 Server="chat.freenode.net:6697"
-Nick="g0v-slack" # Change if Telegram bridging is added.
+# General nick as it might be delivering Telegram messages in future.
+Nick="g0v-bridge"
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 UseTLS=true
 UseSASL=true
