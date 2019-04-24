@@ -46,7 +46,7 @@ ShowJoinPart=true
 
 [irc.irc]
 Server="chat.freenode.net:6697"
-Nick="g0v-bridgebot"
+Nick="g0v-slack" # Change if Telegram bridging is added.
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 UseTLS=true
 UseSASL=true
@@ -185,12 +185,12 @@ enable=true
   channel="general-ja"
     [gateway.inout.options]
     locale="ja"
+  [[gateway.inout]]
+    account="irc.irc"
+    channel="#g0v.tw"
   #[[gateway.inout]]
   #  account="telegram.telegram"
   #  channel="-1001210052391" # g0v group
-  #[[gateway.inout]]
-  #  account="irc.irc"
-  #  channel="#g0v.tw"
 
 [[gateway]]
 name="vnetwork"
