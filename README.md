@@ -39,6 +39,25 @@ Archivers Slack teams.
   request process.
 * Edit channel bridge config via [`config/config-heroku-template.toml`][config].
 
+## Configuration: g0v
+
+As a summary, [this repo's configuration][config] does some specific things
+for the g0v chat ecosystem:
+
+- The IRC-Slack bridge ability that was provided by
+  [`g0v/slack-irc-plugin`][slack-irc-plugin] in the past, is now
+provided by this service.
+tool, using [these][config1] [parts][config2] of config. Some notes:
+  - The NickServ username and password are set via envvar on Heroku.
+  - Matterbridge doesn't yet support spoofing of nicknames for incoming
+    messages like the `slack-irc-plugin` seems to already allow, but
+there is an issue for implementing spoofing [`#667`][spoof-issue].
+
+   [slack-irc-plugin]: https://github.com/g0v/slack-irc-plugin
+   [config1]: https://github.com/patcon/matterbridge-heroku/blob/0a1191c9bd0c4525e45ca47bcec8ff71beddebe2/config/config-heroku-template.toml#L39-L46
+   [config2]: https://github.com/patcon/matterbridge-heroku/blob/master/config/config-heroku-template.toml#L150-L152
+   [spoof-issue]: https://github.com/42wim/matterbridge/issues/667
+
 ## Setting Matterbridge Configuration
 
 Matterbridge uses Viper, and so each value in the TOML configuration can

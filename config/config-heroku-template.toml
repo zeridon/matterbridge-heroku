@@ -23,6 +23,7 @@ IconURL="https://github.com/identicons/{NICK}.png"
 # Token=$MATTERBRIDGE_SLACK_G0VTW_TOKEN # legacy token (user: bridgebot-patcon) # set in envvar
 # Too noisy. Related: https://github.com/42wim/matterbridge/issues/524
 ShowJoinPart=false
+ShowUserTyping=false
 
 [api.local]
 
@@ -46,7 +47,8 @@ ShowJoinPart=true
 
 [irc.irc]
 Server="chat.freenode.net:6697"
-Nick="g0v-bridgebot"
+# General nick as it might be delivering Telegram messages in future.
+Nick="g0v-bridge"
 RemoteNickFormat="{NICK}@{PROTOCOL}: "
 UseTLS=true
 UseSASL=true
@@ -185,12 +187,12 @@ enable=true
   channel="general-ja"
     [gateway.inout.options]
     locale="ja"
+  [[gateway.inout]]
+    account="irc.irc"
+    channel="#g0v.tw"
   #[[gateway.inout]]
   #  account="telegram.telegram"
   #  channel="-1001210052391" # g0v group
-  #[[gateway.inout]]
-  #  account="irc.irc"
-  #  channel="#g0v.tw"
 
 [[gateway]]
 name="vnetwork"
