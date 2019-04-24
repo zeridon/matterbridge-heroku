@@ -49,6 +49,10 @@ for the g0v chat ecosystem:
 provided by this service.
 tool, using [these][config1] [parts][config2] of config. Some notes:
   - The NickServ username and password are set via envvar on Heroku.
+  - The nick of the IRC bot is `g0v-bridge`, as it might later be used
+    for relaying Telegram messages too.
+  - The NickServ name is `hacklabto-bridge` as it was originally created
+    for another team's gateway. No one will see this name in UI. 
   - Matterbridge doesn't yet support spoofing of nicknames for incoming
     messages like the `slack-irc-plugin` seems to already allow, but
 there is an issue for implementing spoofing [`#667`][spoof-issue].
