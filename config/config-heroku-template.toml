@@ -1,7 +1,7 @@
 [general]
 	EditSuffix=" (edited)"
 	EditDisable=false
-	# IgnoreNicks="test" # from env MATTERMOST_GENERAL_IGNORENICKS
+	IgnoreNicks="${MATTERMOST_GENERAL_IGNORENICKS}" # from env MATTERMOST_GENERAL_IGNORENICKS
 	RemoteNickFormat="[{PROTOCOL}] <{NICK}> "
 	ShowJoinPart=false
 	PrefixMessagesWithNick=false
@@ -10,8 +10,8 @@
 
 [irc]
 [irc.ludost]
-	# Server="irc.ludost.net:6697" # from environment MATTERBRIDGE_IRC_LUDOST_SERVER
-	# Nick="Synchrotron" # from env MATTERBRIDGE_IRC_LUDOST_NICK
+	Server="${MATTERBRIDGE_IRC_LUDOST_SERVER}" # from environment MATTERBRIDGE_IRC_LUDOST_SERVER
+	Nick="${MATTERBRIDGE_IRC_LUDOST_NICK}" # from env MATTERBRIDGE_IRC_LUDOST_NICK
 	UseTLS=true
 	UseSASL=false
 	SkipTLSVerify=false
@@ -23,11 +23,11 @@
 [slack]
 [slack.openfest]
 	# change with real token
-	# Token="xoxp-" # from env MATTERBRIDGE_SLACK_OPENFEST_TOKEN
+	Token="${MATTERBRIDGE_SLACK_OPENFEST_TOKEN}" # from env MATTERBRIDGE_SLACK_OPENFEST_TOKEN
 
 [slack.itt]
 	# change with real token
-	# Token="xoxp-" # from env MATTERBRIDGE_SLACK_ITT_TOKEN
+	Token="${MATTERBRIDGE_SLACK_ITT_TOKEN}" # from env MATTERBRIDGE_SLACK_ITT_TOKEN
 
 #[api]
 #	[api.local]
