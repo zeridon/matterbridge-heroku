@@ -8,6 +8,7 @@
 	IconURL="https://robohash.org/{NICK}.png?size=48x48"
 	IgnoreMessages="^~~ badword"
 
+[irc]
 [irc.ludost]
 	# Server="irc.ludost.net:6697" # from environment MATTERBRIDGE_IRC_LUDOST_SERVER
 	# Nick="Synchrotron" # from env MATTERBRIDGE_IRC_LUDOST_NICK
@@ -19,6 +20,7 @@
 	MessageLength=500
 	MessageSplit=true
 
+[slack]
 [slack.openfest]
 	# change with real token
 	# Token="xoxp-" # from env MATTERBRIDGE_SLACK_OPENFEST_TOKEN
