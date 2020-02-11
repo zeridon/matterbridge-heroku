@@ -18,6 +18,9 @@ export MATTERMOST_NICKS_PER_ROW=`echo ${MATTERMOST_NICKS_PER_ROW:=4} | tr -d \"`
 ########################################################################
 lib/envsubst < config/config-heroku-template.toml > config/config-heroku.toml
 
+echo start.sh
+cat config/config-heroku.toml
+
 #####################################
 # Pass SIGTERM to Matterbridge proc #
 #####################################
