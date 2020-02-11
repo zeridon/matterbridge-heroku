@@ -20,6 +20,8 @@ lib/envsubst < config/config-heroku-template.toml > config/config-heroku.toml
 
 echo start.sh
 cat config/config-heroku.toml
+echo '======================'
+ls -laR ../../../../../../../
 
 #####################################
 # Pass SIGTERM to Matterbridge proc #
