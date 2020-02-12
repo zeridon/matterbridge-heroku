@@ -1,2 +1,3 @@
 config/config-heroku.toml
 .env
+matterbridge
